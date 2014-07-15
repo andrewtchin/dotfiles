@@ -54,21 +54,23 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/leroux/src/gcc-arm-none-eabi-4_8-2013q4/bin:/Users/leroux/.cabal/bin:/usr/local/bin:/Users/leroux/bin:/Users/leroux/.dotfiles/bin:/usr/local/sbin:/Users/leroux/.opam/system/bin:/Users/leroux/.cabal/bin:/Users/leroux/bin:/Users/leroux/.dotfiles/bin:/Users/leroux/.opam/system/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/leroux/.cabal/bin:/usr/local/MacGPG2/bin:/usr/texbin:/usr/local/share/npm/bin:/bin:/Users/leroux/ghc/bin:/Users/leroux/.rvm/bin:/usr/local/share/npm/bin:/bin:/Users/leroux/ghc/bin:/Users/leroux/Documents/yagarto/yagarto-4.7.2/bin:/Users/leroux/Documents/yagarto/yagarto-4.7.2/tools:/Users/leroux/.rvm/bin"
+export PATH="/opt/ghc-7.8/bin:/Users/leroux/src/gcc-arm-none-eabi-4_8-2013q4/bin:/Users/leroux/.cabal/bin:/usr/local/bin:/Users/leroux/bin:/Users/leroux/.dotfiles/bin:/usr/local/sbin:/Users/leroux/.opam/system/bin:/Users/leroux/.cabal/bin:/Users/leroux/bin:/Users/leroux/.dotfiles/bin:/Users/leroux/.opam/system/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/leroux/.cabal/bin:/usr/local/MacGPG2/bin:/usr/texbin:/usr/local/share/npm/bin:/bin:/Users/leroux/ghc/bin:/Users/leroux/.rvm/bin:/usr/local/share/npm/bin:/bin:/Users/leroux/ghc/bin:/Users/leroux/Documents/yagarto/yagarto-4.7.2/bin:/Users/leroux/Documents/yagarto/yagarto-4.7.2/tools:/Users/leroux/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='vim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+if [ -e /Users/leroux/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/leroux/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
