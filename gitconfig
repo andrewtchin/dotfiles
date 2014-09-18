@@ -3,16 +3,16 @@
   email = leroux@fezrev.com
 [core]
   excludesfile = ~/.gitignore
-	autocrlf = input
-	safecrlf = false
+  autocrlf = input
+  safecrlf = false
 [push]
   default = simple
 [alias]
   lg = "log --oneline --decorate --all --graph -30"
 [diff]
-	ignoreSubmodules = dirty
+  ignoreSubmodules = dirty
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [color]
   ui = true
 [help]

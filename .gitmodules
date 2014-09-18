@@ -1,6 +1,3 @@
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
+[submodule "zsh"]
+	path = zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
-[submodule "spf13-vim-3"]
-	path = spf13-vim
-	url = https://github.com/spf13/spf13-vim.git

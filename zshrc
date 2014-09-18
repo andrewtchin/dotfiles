@@ -74,3 +74,5 @@ fi
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 if [ -e /Users/leroux/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/leroux/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+export PYTHONPATH="$PYTHONPATH:/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Resources/Python"
