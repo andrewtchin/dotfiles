@@ -5,7 +5,7 @@
     excludesfile = ~/.gitignore
     autocrlf = input
     safecrlf = false
-    editor = subl -n -w
+    editor = mvin -f
 [push]
     default = simple
 [alias]
