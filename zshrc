@@ -45,7 +45,7 @@ ZSH_THEME="gallifrey"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump)
+plugins=(git autojump colored-man compleat cp dirpersist jira pip virtualenv python nyan lol osx brew)
 
 source $ZSH/oh-my-zsh.sh
 
