@@ -79,4 +79,6 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source $HOME/.zshrc.local
+if [ -f $HOME/.zshrc.local ]; then
+    source $HOME/.zshrc.local
+fi

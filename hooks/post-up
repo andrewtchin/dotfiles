@@ -1,0 +1,2 @@
+# Install spf13-vim bundles 
+vim +BundleInstall +qall 2>/dev/null 1>&2
