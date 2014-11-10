@@ -1,2 +1,7 @@
-# Install spf13-vim bundles 
-vim +BundleInstall +qall 2>/dev/null 1>&2
+# Install vim bundles
+vim +BundleInstall! +BundleClean +qall
+
+VIMPROC_DIR="~/.vim/bundle/vimproc"
+if [ -d "$VIMPROC_DIR" ]; then
+    cd $VIMPROC_DIR; make
+fi

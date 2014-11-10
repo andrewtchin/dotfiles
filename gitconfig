@@ -12,8 +12,6 @@
     lg = "log --oneline --decorate --all --graph -30"
 [diff]
     ignoreSubmodules = dirty
-[credential]
-    helper = osxkeychain
 [color]
     ui = true
 [help]
