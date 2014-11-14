@@ -1,1 +1,13 @@
+" Install vundle
+let iCanHazVundle=1
+let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
+if !filereadable(vundle_readme)
+    echo "Installing Vundle.."
+    echo ""
+    silent !mkdir -p ~/.vim/bundle
+    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+    let iCanHazVundle=0
+endif
+
 let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'misc', 'haskell', 'python']
+let g:airline_powerline_fonts=1
