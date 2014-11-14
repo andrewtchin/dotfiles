@@ -1,2 +1,3 @@
-colorscheme ir_black
+let g:solarized_termcolors=16
+colorscheme solarized
 set nospell
