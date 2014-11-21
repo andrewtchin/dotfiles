@@ -1,6 +1,7 @@
 [user]
     name = Muhaimin Ahsan
     email = leroux@fezrev.com
+    signingkey = 064ECDBD
 [core]
     excludesfile = ~/.gitignore
     autocrlf = input
