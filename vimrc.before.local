@@ -11,3 +11,4 @@ endif
 
 let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'misc', 'haskell', 'python']
 let g:airline_powerline_fonts=1
+let g:spf13_no_omni_complete = 1
