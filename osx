@@ -326,6 +326,10 @@ echo "Set size of icons on the desktop and in other icon views."
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 60" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 60" ~/Library/Preferences/com.apple.finder.plist
 
+echo ""
+echo "Setting column view as default view."
+defaults write com.apple.Finder FXPreferredViewStyle clm
+
 
 
 ###############################################################################
