@@ -1,5 +1,7 @@
 # Install vim bundles
-vim +BundleInstall! +BundleClean +qall
+if [ ! "$(ls -A $HOME/.vim/bundle)" ]; then
+    vim +BundleInstall! +BundleClean +qall
+fi
 
 VIMPROC_DIR="$HOME/.vim/bundle/vimproc"
 if [ -d "$VIMPROC_DIR" ]; then
