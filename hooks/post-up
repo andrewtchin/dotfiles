@@ -6,13 +6,13 @@ fi
 VIMPROC_DIR="$HOME/.vim/bundle/vimproc"
 if [ -d "$VIMPROC_DIR" ]; then
     echo "Building vimproc."
-    pushd $VIMPROC_DIR; make; popd
+    cd $VIMPROC_DIR; make; cd -
 fi
 
 YCM_DIR="$HOME/.vim/bundle/YouCompleteMe"
 if [ -d "$YCM_DIR" ]; then
     echo "Building YCM."
-    pushd $YCM_DIR
+    cd $YCM_DIR
     ./install.sh --clang-completer
-    popd
+    cd -
 fi
