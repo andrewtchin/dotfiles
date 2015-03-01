@@ -137,9 +137,9 @@ sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableTheme
 # General Power and Performance modifications
 ###############################################################################
 
-echo ""
-echo "Disable hibernation. (speeds up entering sleep mode)"
-sudo pmset -a hibernatemode 0
+#echo ""
+#echo "Disable hibernation. (speeds up entering sleep mode)"
+#sudo pmset -a hibernatemode 0
 
 echo ""
 echo "Remove the sleep image file to save disk space."
