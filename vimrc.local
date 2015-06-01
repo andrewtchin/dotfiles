@@ -1,5 +1,5 @@
 let g:solarized_termcolors=16
-colorscheme solarized
+colorscheme ir_black
 set nospell
 
 autocmd filetype crontab setlocal nobackup nowritebackup
