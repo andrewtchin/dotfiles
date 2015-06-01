@@ -4,3 +4,6 @@
 [submodule "spf13-vim"]
 	path = spf13-vim
 	url = https://github.com/spf13/spf13-vim
+[submodule "emacs.d"]
+	path = emacs.d
+	url = http://github.com/syl20bnr/spacemacs

@@ -1,1 +1,1 @@
-cd ~/.dotfiles; git submodule update --init; cd -
+git submodule update --init --recursive
