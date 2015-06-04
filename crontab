@@ -1,1 +1,2 @@
-0 1 * * * /usr/bin/env gpg --refresh-keys > /dev/null 2>&1
+# https://help.riseup.net/en/security/message-security/openpgp/best-practices#refresh-your-keys-slowly-and-one-at-a-time
+#0 1 * * * /usr/bin/env gpg --refresh-keys > /dev/null 2>&1

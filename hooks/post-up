@@ -1,0 +1,8 @@
+#!/bin/bash -x
+
+echo "Entering post-up script."
+
+# Install crontab
+crontab ~/.crontab
+
+echo "Exiting post-up script."
