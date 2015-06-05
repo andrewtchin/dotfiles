@@ -1,8 +1,26 @@
-#!/bin/bash -x
+#!/bin/sh
 
-echo "Entering post-up script."
+shopt -s extglob
+shopt -s nullglob
+
+# Install vim bundles
+if [ ! "$(ls -A $HOME/.vim/bundle)" ]; then
+  vim +BundleInstall +qa
+fi
+
+VIMPROC_DIR="$HOME/.vim/bundle/vimproc"
+if [ -d "$VIMPROC_DIR" ]; then
+    cd $VIMPROC_DIR; make>/dev/null; cd ~-
+fi
+
+YCM_DIR="$HOME/.vim/bundle/YouCompleteMe"
+if [ -d "$YCM_DIR" ] &&
+   ! ls $YCM_DIR/third_party/ycmd/ycm_core.* 1> /dev/null 2>&1; then
+    echo "Building YCM."
+    cd $YCM_DIR
+    ./install.sh --clang-completer
+    cd ~-
+fi
 
 # Install crontab
 crontab ~/.crontab
-
-echo "Exiting post-up script."

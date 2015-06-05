@@ -1,7 +1,3 @@
-#!/bin/bash -x
-
-echo "Entering pre-up script."
+#!/bin/sh
 
 git submodule update --init --recursive
-
-echo "Exiting pre-up script."
