@@ -46,5 +46,5 @@ for tap in $taps; do
     brew tap $tap
 done
 
-brew install $( IFS=$' '; echo "${pkgs[*]}" ) \
-             $( IFS=$' '; echo "${cask_apps[*]}" )
+brew install $( IFS=$' '; echo "${pkgs[*]}" )
+brew install $( IFS=$' '; echo "${cask_apps[*]}" )
