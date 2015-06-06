@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 
+if [ ! -z "$PROVISION" ]; then
+    source "${BASH_SOURCE%/*}/provision.sh"
+fi
+
 git submodule update --init --recursive

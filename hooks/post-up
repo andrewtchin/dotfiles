@@ -3,6 +3,8 @@
 shopt -s extglob
 shopt -s nullglob
 
+echo $PROVISION
+
 # Install vim bundles.
 if [ ! "$(ls -A $HOME/.vim/bundle)" ]; then
   vim +BundleInstall +qa
