@@ -1,8 +1,8 @@
-[submodule "zsh"]
-	path = zsh
+[submodule "tag-zsh/zsh"]
+	path = tag-zsh/zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
-[submodule "spf13-vim"]
-	path = spf13-vim
+[submodule "tag-vim/spf13-vim"]
+	path = tag-vim/spf13-vim
 	url = https://github.com/spf13/spf13-vim
 [submodule "tag-emacs/emacs.d"]
 	path = tag-emacs/emacs.d
