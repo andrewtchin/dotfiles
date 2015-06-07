@@ -171,6 +171,14 @@ echo "Always hibernate. (disk is encrypted in this state, unlike in sleep state)
 sudo pmset -a hibernatemode 25
 
 echo ""
+echo "Enable standby mode even when charger is plugged in."
+sudo pmset -a standby 1
+
+echo ""
+echo "Standby in 1 minute."
+sudo pmset -a standbydelay 60
+
+echo ""
 echo "Disable the sudden motion sensor. (it's not useful for SSDs/current MacBooks)"
 sudo pmset -a sms 0
 
@@ -182,11 +190,6 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 echo ""
 echo "Disable the menubar transparency.)"
 defaults write com.apple.universalaccess reduceTransparency -bool true
-
-echo ""
-echo "Speeding up wake from sleep to 24 hours from an hour"
-# http://www.cultofmac.com/221392/quick-hack-speeds-up-retina-macbooks-wake-from-sleep-os-x-tips/
-sudo pmset -a standbydelay 86400
 
 
 ################################################################################
