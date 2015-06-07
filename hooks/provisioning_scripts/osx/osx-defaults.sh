@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+set -o errexit
+set -o pipefail
+set -o nounset
+# set -o xtrace
+
 # Alot of these configs have been taken from the various places
 # on the web, most from here
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
@@ -101,7 +106,7 @@ defaults write com.apple.spotlight orderedItems -array \
   '{"enabled" = 0;"name" = "MENU_WEBSEARCH";}' \
   '{"enabled" = 0;"name" = "MENU_SPOTLIGHT_SUGGESTIONS";}'
 # Load new settings before rebuilding the index
-killall mds > /dev/null 2>&1
+killall mds > /dev/null 2>&1 || true
 # Make sure indexing is enabled for the main volume
 sudo mdutil -i on / > /dev/null
 # Rebuild the index from scratch
@@ -153,7 +158,7 @@ find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
   "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
   "Terminal" "Transmission"; do
-  killall "${app}" > /dev/null 2>&1
+  killall "${app}" > /dev/null 2>&1 || true
 done
 
 echo ""
@@ -251,7 +256,7 @@ echo ""
 echo "Save screenshots to ~/Desktop."
 # Thanks https://github.com/omgmog
 echo ""
-if [ -z "${screenshot_location}" ]
+if [ -z "${screenshot_location:-}" ]
 then
   # If nothing specified, we default to ~/Desktop
   screenshot_location="${HOME}/Desktop"
@@ -268,16 +273,7 @@ defaults write com.apple.screencapture location -string "${screenshot_location}"
 
 echo ""
 echo "Save screenshots as PNG."
-if [ -z "$1" ]
-then
-  echo ""
-  echo "Setting screenshot format to PNG"
-  defaults write com.apple.screencapture type -string "png"
-else
-  echo ""
-  echo "Setting screenshot format to $screenshot_format"
-  defaults write com.apple.screencapture type -string "$screenshot_format"
-fi
+defaults write com.apple.screencapture type -string "png"
 
 echo ""
 echo "Enabling subpixel font rendering on non-Apple LCDs"
