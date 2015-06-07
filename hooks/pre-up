@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 if [ ! -z "$PROVISION" ]; then
     source "${BASH_SOURCE%/*}/provision.sh"

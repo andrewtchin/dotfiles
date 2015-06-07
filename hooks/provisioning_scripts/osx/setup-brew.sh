@@ -1,4 +1,5 @@
 #!/usr/bin/env bash -x
+set -e
 
 taps=(
     caskroom/fonts

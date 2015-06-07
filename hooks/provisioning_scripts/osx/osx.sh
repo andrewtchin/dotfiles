@@ -1,4 +1,5 @@
 #!/usr/bin/env bash -x
+set -e
 
 OSX_DIR="${BASH_SOURCE%/*}"
 
@@ -9,4 +10,4 @@ source "$OSX_DIR/setup-brew.sh"
 # Install iTerm preferences.
 defaults delete com.googlecode.iterm2
 cp $OSX_DIR/config/com.googlecode.iterm2.plist ~/Library/Preferences/
-defaults read -app iTerm2
+defaults read com.googlecode.iterm2 >/dev/null
