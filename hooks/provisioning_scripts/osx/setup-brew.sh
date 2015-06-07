@@ -45,5 +45,5 @@ for tap in "${taps[@]}"; do
     brew tap $tap
 done
 
-brew install $( IFS=$' '; echo "${pkgs[*]}" )
-brew cask install $( IFS=$' '; echo "${cask_apps[*]}" )
+brew install "${pkgs[@]}"
+brew cask install "${cask_apps[@]}"
