@@ -22,7 +22,7 @@ pkgs=(
     bitlbee
 )
 
-cask_apps=(
+casks=(
     font-inconsolata-dz-for-powerline
     google-chrome
     iterm2
@@ -46,4 +46,4 @@ for tap in "${taps[@]}"; do
 done
 
 brew install "${pkgs[@]}"
-brew cask install "${cask_apps[@]}"
+brew cask install "${casks[@]}"
