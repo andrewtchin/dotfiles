@@ -24,7 +24,6 @@ pkgs=(
 
 cask_apps=(
     font-inconsolata-dz-for-powerline
-    # Apps
     google-chrome
     iterm2
     firefox
@@ -38,13 +37,13 @@ cask_apps=(
 )
 
 # Install homebrew.
-# Insecure...yeah... (should expand to the contents of the script.)
+# Insecure...yeah... (should expand to the contents of the script)
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # brew taps
-for tap in $taps; do
+for tap in "${taps[@]}"; do
     brew tap $tap
 done
 
 brew install $( IFS=$' '; echo "${pkgs[*]}" )
-brew install $( IFS=$' '; echo "${cask_apps[*]}" )
+brew cask install $( IFS=$' '; echo "${cask_apps[*]}" )
