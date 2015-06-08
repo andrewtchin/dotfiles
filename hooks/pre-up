@@ -1,8 +1,13 @@
 #!/usr/bin/env bash
-set -e
 
-if [ ! -z "$PROVISION" ]; then
-    source "${BASH_SOURCE%/*}/provision.sh"
-fi
+set -o errexit
+set -o pipefail
+set -o nounset
+# set -o xtrace
 
-git submodule update --init --recursive
+__dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+__root="$(cd "$(dirname "${__dir}")" && pwd)" # <-- change this
+__file="${__dir}/$(basename "${BASH_SOURCE[0]}")"
+__base="$(basename ${__file} .sh)"
+
+. "${__dir}/pre-up.sh"

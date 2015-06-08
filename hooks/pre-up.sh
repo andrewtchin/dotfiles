@@ -10,6 +10,12 @@ __root="$(cd "$(dirname "${__dir}")" && pwd)" # <-- change this
 __file="${__dir}/$(basename "${BASH_SOURCE[0]}")"
 __base="$(basename ${__file} .sh)"
 
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    source "${__dir}/provisioning_scripts/osx/osx.sh"
+: ${RCRC:=$HOME/.rcrc}
+[ -r "$RCRC" ] && . "$RCRC"
+
+: ${PROVISION:=no}
+if [ "$PROVISION" = "yes" ]; then
+    source "${BASH_SOURCE%/*}/provision.sh"
 fi
+
+git submodule update --init --recursive
