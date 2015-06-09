@@ -17,5 +17,3 @@ __base="$(basename ${__file} .sh)"
 if [ "$PROVISION" = "yes" ]; then
     source "${BASH_SOURCE%/*}/provision.sh"
 fi
-
-git submodule update --init --recursive
