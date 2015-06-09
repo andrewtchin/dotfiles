@@ -13,7 +13,7 @@ __base="$(basename ${__file} .sh)"
 git submodule update --init --recursive
 
 # Install vim bundles.
-if [ ! "$(ls -A $HOME/.vim/bundle)" ]; then
+if [ ! "$(ls -A $HOME/.vim/bundle >/dev/null 2>&1)" ]; then
   vim +BundleInstall +qa
 fi
 
@@ -27,7 +27,7 @@ fi
 
 YCM_DIR="$HOME/.vim/bundle/YouCompleteMe"
 if [ -d "$YCM_DIR" ] &&
-   [ ! $(ls -A $YCM_DIR/third_party/ycmd/ycm_core.*) ]; then
+   [ ! $(ls -A $YCM_DIR/third_party/ycmd/ycm_core.* >/dev/null 2>&1) ]; then
     echo "Building YCM."
     cd $YCM_DIR
     ./install.sh --clang-completer
