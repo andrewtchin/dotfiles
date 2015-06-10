@@ -49,6 +49,7 @@ casks=(
     playonmac
     xquartz
     wireshark
+    bittorrent-sync
 )
 
 main () {
