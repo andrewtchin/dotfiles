@@ -1,1 +1,2 @@
-export PACKER_CACHE_DIR="~/.packer_cache"
+export PACKER_LOG=yes
+export PACKER_LOG_PATH=/dev/stdout

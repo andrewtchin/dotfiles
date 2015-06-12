@@ -57,7 +57,10 @@ main () {
     command -v xcodebuild >/dev/null 2>&1 || source "${__dir}/xcode-cli-tools.sh"
     setup_brew "${taps}" "${pkgs}" "${casks}"
 
-    install_plist "${__dir}/config/com.googlecode.iterm2.plist"
+    # Install Preferences (in the form of plists)
+    for plist in ${__dir}/*.plist; do
+        install_plist $plist
+    done
 }
 
 # setup_brew(taps, pkgs, casks)
