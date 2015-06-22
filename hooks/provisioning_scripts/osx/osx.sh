@@ -42,6 +42,7 @@ casks=(
     google-chrome
     iterm2
     firefox
+    spotify
     vlc
     caffeine
     gpgtools
