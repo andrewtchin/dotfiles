@@ -35,6 +35,7 @@ pkgs=(
     cmake
     bitlbee
     keybase
+    youtube-dl
 )
 
 casks=(
@@ -51,6 +52,7 @@ casks=(
     xquartz
     wireshark
     bittorrent-sync
+    flux
 )
 
 main () {
