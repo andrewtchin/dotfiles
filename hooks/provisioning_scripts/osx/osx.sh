@@ -36,6 +36,7 @@ pkgs=(
     bitlbee
     keybase
     youtube-dl
+    coreutils
 )
 
 casks=(
