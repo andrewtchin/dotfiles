@@ -1,3 +1,3 @@
-export TAGS="${TAGS} zsh vim" # default tags
+export TAGS="${TAGS} zsh vim git" # default tags
 export SYMLINK_DIRS="${SYMLINK_DIRS} emacs.d spf13-vim zsh"
 export EXCLUDES="${EXCLUDES} README.md rcup.sh"
