@@ -1,5 +1,7 @@
 [user]
     name = Muhaimin Ahsan
+[init]
+    templatedir = ~/.git-scripts/templates
 [core]
     excludesfile = ~/.gitignore
     autocrlf = input
@@ -10,7 +12,7 @@
 [alias]
     lg = "log --oneline --decorate --all --graph -30"
     cara = "commit --amend --reset-author"
-	email-guess = !. ~/.git-scripts/email-guess.sh
+    email-guess = "!~/.git-scripts/email-guess.sh"
 [diff]
     ignoreSubmodules = dirty
 [color]
