@@ -7,3 +7,6 @@
 [submodule "tag-emacs/emacs.d"]
 	path = tag-emacs/emacs.d
 	url = http://github.com/syl20bnr/spacemacs
+[submodule "peda"]
+	path = peda
+	url = git@github.com:longld/peda.git
