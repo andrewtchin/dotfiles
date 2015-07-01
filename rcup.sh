@@ -1,35 +1,53 @@
 #!/usr/bin/env bash
-set -e
 
+set -o errexit
+set -o pipefail
+set -o nounset
+set -o xtrace
+
+SAVED_PWD=`pwd`
+__dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+__root="$(cd "$(dirname "${__dir}")" && pwd)" # <-- change this
+__file="${__dir}/$(basename "${BASH_SOURCE[0]}")"
+__base="$(basename ${__file} .sh)"
+
+RCM_REPO="${BASH_SOURCE%/*}/.rcm"
 LOCKFILE="/tmp/dotfiles.lock"
 
 function cleanUp() {
-  rm -f $LOCKFILE
+  rm -f "${LOCKFILE}"
+  cd "${SAVED_PWD}"
 }
 
 trap cleanUp EXIT INT TERM
 
-mktemp $LOCKFILE >/dev/null || { echo "Unable to get lock $LOCKFILE. Remove $LOCKFILE if you think this is a mistake."; exit 1; }
+# Check/get lock.
+echo -n "Getting lock."
+if [ -f "${LOCKFILE}" ]; then
+    echo "..unable to get lock ${LOCKFILE}. rm ${LOCKFILE} to clean up stale state."
+    exit 1
+else
+    echo "..got lock!"
+    touch "${LOCKFILE}"
+fi
 
 # Install rcm, if it's not installed.
+echo -n "Checking if rcm is installed."
 if ! command -v rcup >/dev/null; then
-    echo "Installing rcm."
+    echo -n "..not found.\nBuilding/installing rcm."
 
-    TMPDIR=`mktemp -d /tmp/$(basename $0)-dir.XXXX` || exit 1
-    cd $TMPDIR
-
-    curl -LO https://thoughtbot.github.io/rcm/dist/rcm-1.2.3.tar.gz
-
-    sha=$(shasum -a 256 rcm-1.2.3.tar.gz | cut -f1 -d' ')
-    [ "$sha" = "502fd44e567ed0cfd00fb89ccc257dac8d6eb5d003f121299b5294c01665973f" ]
-
-    tar -xvf rcm-1.2.3.tar.gz
-    cd rcm-1.2.3
-
+    cd $RCM_REPO
+    ./autogen.sh
     ./configure
-    make
-    make install
+    echo "..installed!"
+    RCUP="${__dir}/.rcm/bin/rcup"
+    chmod +x $RCUP
+else
+    echo "..found!"
+    RCUP="rcup"
 fi
 
 # Invoke rcup with all arguments passed to this script.
-rcup "$@"
+"${RCUP}" "$@"
+
+cd $SAVED_PWD

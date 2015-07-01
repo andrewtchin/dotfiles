@@ -5,8 +5,6 @@ set -o pipefail
 set -o nounset
 # set -o xtrace
 
-git submodule update --init --recursive
-
 # Install vim bundles.
 if [ ! "$(ls -A $HOME/.vim/bundle >/dev/null 2>&1)" ]; then
   vim +BundleInstall +qa
@@ -31,3 +29,8 @@ fi
 
 # Install crontab
 crontab ~/.crontab
+
+# Set zsh as default shell.
+if default_shell=$(command -v zsh); then
+    chsh -s $default_shell
+fi
