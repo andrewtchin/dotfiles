@@ -1,3 +1,3 @@
 export TAGS="${TAGS} zsh vim git dbg" # default tags
 export SYMLINK_DIRS="${SYMLINK_DIRS} emacs.d spf13-vim zsh git-scripts peda"
-export EXCLUDES="${EXCLUDES} .rcm README.md rcup.sh"
+export EXCLUDES="${EXCLUDES} README.md bin"

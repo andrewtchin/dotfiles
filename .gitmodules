@@ -1,5 +1,5 @@
-[submodule ".rcm"]
-	path = .rcm
+[submodule "bin/rcm"]
+	path = bin/rcm
 	url = https://github.com/thoughtbot/rcm
 [submodule "tag-zsh/zsh"]
 	path = tag-zsh/zsh
