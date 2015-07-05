@@ -54,6 +54,7 @@ casks=(
     wireshark
     bittorrent-sync
     flux
+    audacity
 )
 
 main () {
