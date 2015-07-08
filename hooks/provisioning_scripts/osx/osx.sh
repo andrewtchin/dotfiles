@@ -37,6 +37,8 @@ pkgs=(
     keybase
     youtube-dl
     coreutils
+    ack
+    aspell
 )
 
 casks=(
