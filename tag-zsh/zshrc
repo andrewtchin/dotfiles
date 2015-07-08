@@ -1,18 +1,45 @@
+# ~/.zshrc
+
 ZSH_THEME="gallifrey"
+
+# Environment
+export EDITOR='vim'
+export GPG_TTY=`tty`
+
+# PATH, as always.
+export PATH="~/bin:/usr/local/bin:/usr/local/sbin:${PATH}"
+
+# Aliases
+which htop >/dev/null     && alias top=htop
+which ack-grep >/dev/null && alias ack=ack-grep
+which vim >/dev/null      && alias vi=vim
+
+# ssh-agent
+# Predictable SSH authentication socket location.
+SOCK="/tmp/ssh-agent-$USER-screen"
+if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]; then
+    rm -f /tmp/ssh-agent-$USER-screen
+    ln -sf $SSH_AUTH_SOCK $SOCK
+    export SSH_AUTH_SOCK=$SOCK
+fi
+
+# Source local rc.
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+# Python
+export PYTHONSTARTUP="~/.pythonrc"
 
 # antigen!!!
 source ~/.antigen/antigen.zsh
-
-# Load the oh-my-zsh's library.
 antigen use oh-my-zsh
-
 antigen bundles <<EOBUNDLES
     zsh-users/zsh-syntax-highlighting
+    zsh-users/zsh-history-substring-search
 
     autojump
-    autopep8
     brew
     colored-man
+    command-not-found
     common-aliases
     compleat
     cp
@@ -24,30 +51,5 @@ antigen bundles <<EOBUNDLES
     pip
     python
 EOBUNDLES
-
 antigen theme "${ZSH_THEME:-robbyrussell}"
-
-# PATH
-export PATH="${HOME}/bin:/usr/local/bin:/usr/local/sbin:${PATH}"
-
-# vim
-export EDITOR='vim'
-alias vi='vim'
-
-# ssh-agent
-# Predictable SSH authentication socket location.
-SOCK="/tmp/ssh-agent-$USER-screen"
-if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]
-then
-    rm -f /tmp/ssh-agent-$USER-screen
-    ln -sf $SSH_AUTH_SOCK $SOCK
-    export SSH_AUTH_SOCK=$SOCK
-fi
-
-# Source local zshrc.
-if [ -f $HOME/.zshrc.local ]; then
-    source $HOME/.zshrc.local
-fi
-
-# Python
-export PYTHONSTARTUP="$HOME/.pythonrc"
+antigen apply
