@@ -5,13 +5,11 @@ set -o pipefail
 set -o nounset
 # set -o xtrace
 
-# Set zsh as default shell.
-if default_shell=$(command -v /bin/zsh); then
-    chsh -s $default_shell
-fi
-
 # Install crontab
 crontab ~/.crontab
+
+# Set zsh as default shell.
+chsh -s $(which zsh)
 
 # Install vim bundles.
 if [ ! "$(ls -A $HOME/.vim/bundle >/dev/null 2>&1)" ]; then
