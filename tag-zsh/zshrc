@@ -27,7 +27,7 @@ fi
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 # Python
-export PYTHONSTARTUP="~/.pythonrc"
+export PYTHONSTARTUP="${HOME}/.pythonrc"
 
 # antigen!!!
 source ~/.antigen/antigen.zsh
