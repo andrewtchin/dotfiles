@@ -39,6 +39,8 @@ pkgs=(
     coreutils
     ack
     aspell
+    tree
+    jq
 )
 
 casks=(
