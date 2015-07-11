@@ -13,6 +13,3 @@
 [submodule "tag-zsh/antigen"]
 	path = tag-zsh/antigen
 	url = git@github.com:zsh-users/antigen.git
-[submodule "tag-autoenv/autoenv"]
-	path = tag-autoenv/autoenv
-	url = git@github.com:kennethreitz/autoenv.git

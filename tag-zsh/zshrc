@@ -37,7 +37,6 @@ antigen bundles <<EOBUNDLES
     zsh-users/zsh-history-substring-search
 
     autojump
-    autoenv
     brew
     colored-man
     command-not-found
