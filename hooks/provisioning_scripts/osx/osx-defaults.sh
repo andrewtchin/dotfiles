@@ -162,8 +162,8 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 done
 
 echo ""
-echo "Do not show icons on Desktop."
-defaults write com.apple.finder CreateDesktop -bool false
+echo "Show icons on Desktop."
+defaults write com.apple.finder CreateDesktop -bool true
 
 
 ###############################################################################
