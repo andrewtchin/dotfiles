@@ -8,9 +8,6 @@ set -o nounset
 # Install crontab
 crontab ~/.crontab
 
-# Set zsh as default shell.
-chsh -s $(which zsh)
-
 # Install vim bundles.
 if [ ! "$(ls -A $HOME/.vim/bundle >/dev/null 2>&1)" ]; then
   vim +BundleInstall +qa
