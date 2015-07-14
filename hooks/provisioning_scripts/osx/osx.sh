@@ -37,10 +37,10 @@ pkgs=(
     keybase
     youtube-dl
     coreutils
-    ack
     aspell
     tree
     jq
+    the_silver_searcher
 )
 
 casks=(
