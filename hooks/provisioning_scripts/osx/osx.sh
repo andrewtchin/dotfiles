@@ -15,6 +15,7 @@ green=`tput setaf 2`
 reset=`tput sgr0`
 
 taps=(
+    caskroom/cask
     caskroom/fonts
     homebrew/binary
     homebrew/dupes
@@ -24,41 +25,39 @@ taps=(
 
 pkgs=(
     brew-cask
+    coreutils
+    git
+    keybase
     openssh
     rcm
-    zsh
     vim
-    irssi
-    autojump
     wget
-    terminal-notifier
-    cmake
-    bitlbee
-    keybase
-    youtube-dl
-    coreutils
-    ack
-    aspell
-    tree
-    jq
+    zsh
 )
 
 casks=(
-    font-inconsolata-dz-for-powerline
-    google-chrome
-    iterm2
+    1password
+    doxie
+    dropbox
+    evernote
     firefox
-    spotify
-    vlc
-    caffeine
+    flash-player
+    flux
+    google-chrome
     gpgtools
+    intellij-idea-ce
+    iterm2
     java
-    playonmac
+    lastpass
+    seil
+    skype
+    teamviewer
+    textwrangler
+    tunnelblick
+    utorrent
+    vlc
     xquartz
     wireshark
-    bittorrent-sync
-    flux
-    audacity
 )
 
 main () {
