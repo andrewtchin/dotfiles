@@ -41,7 +41,6 @@ casks=(
     dropbox
     evernote
     firefox
-    flash-player
     flux
     google-chrome
     gpgtools
