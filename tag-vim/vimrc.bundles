@@ -1,1 +1,22 @@
-spf13-vim/.vimrc.bundles
+if &compatible
+  set nocompatible
+end
+
+call plug#begin('~/.vim/bundle')
+
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-surround'
+
+" Python
+Plug 'klen/python-mode'
+Plug 'davidhalter/jedi-vim'
+
+" Colorschemes
+Plug 'vim-scripts/wombat256.vim'
+
+if filereadable(expand("~/.vimrc.bundles.local"))
+  source ~/.vimrc.bundles.local
+endif
+
+call plug#end()
