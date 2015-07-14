@@ -1,30 +1,14 @@
-# ~/.zshrc
-
-ZSH_THEME="gallifrey"
-
-# Environment
-export EDITOR='vim'
-export GPG_TTY=`tty`
-
-# PATH, as always.
-export PATH="~/bin:/usr/local/bin:/usr/local/sbin:${PATH}"
-
-# Aliases
-which htop >/dev/null     && alias top=htop
-which ack-grep >/dev/null && alias ack=ack-grep
-which vim >/dev/null      && alias vi=vim
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 # ssh-agent
-# Predictable SSH authentication socket location.
+# Predictable SSH authentication socket location
+# so that ssh-agent works on reattach to tmux sessions.
 SOCK="/tmp/ssh-agent-$USER-screen"
 if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]; then
     rm -f /tmp/ssh-agent-$USER-screen
     ln -sf $SSH_AUTH_SOCK $SOCK
     export SSH_AUTH_SOCK=$SOCK
 fi
-
-# Source local rc.
-[ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 # Python
 export PYTHONSTARTUP="${HOME}/.pythonrc"

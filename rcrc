@@ -1,3 +1,4 @@
 export TAGS="${TAGS} zsh emacs vim git dbg" # default tags
-export SYMLINK_DIRS="${SYMLINK_DIRS} emacs.d spf13-vim zsh git-scripts peda"
-export EXCLUDES="${EXCLUDES} README.md bin"
+export SYMLINK_DIRS="${SYMLINK_DIRS} emacs.d spf13-vim git-scripts peda"
+export EXCLUDES="${EXCLUDES} README.md LICENSE"
+export DOTFILES_DIRS="${HOME}/.dotfiles-local ${HOME}/.dotfiles"

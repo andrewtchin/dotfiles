@@ -1,5 +1,3 @@
-[user]
-    name = Muhaimin Ahsan
 [init]
     templatedir = ~/.git-scripts/templates
 [core]
@@ -8,14 +6,18 @@
     safecrlf = false
     editor = vim
 [push]
+    # push only the current branch to the one that git pull would pull from
+    # prevents accidental pushes
     default = current
 [alias]
     lg = "log --oneline --decorate --all --graph -30"
     cara = "commit --amend --reset-author"
     email-guess = "!~/.git-scripts/email-guess.sh"
-[diff]
-    ignoreSubmodules = dirty
 [color]
-    ui = true
+    ui = auto
 [help]
     autocorrect = 1
+[rerere]
+    enabled = true
+[include]
+    path = ~/.gitconfig.local
