@@ -1,4 +1,4 @@
-leroux's dotfiles
+andrewtchin's dotfiles
 =================
 Inspired by [thoughtbot dotfiles](https://github.com/thoughtbot/dotfiles) and made possible by
 [rcm](https://github.com/thoughtbot/rcm), both of which are from [thoughtbot](https://github.com/thoughtbot).
@@ -14,7 +14,7 @@ chsh -s $(which zsh)  # you may have to point to /bin/zsh for brew-installed zsh
 
 User-Specific Customizations
 ----------------------------
-Fork [dotfiles-local](https://github.com/leroux/dotfiles-local) and tune with your own settings.
+Fork [dotfiles-local](https://github.com/andrewtchin/dotfiles-local) and tune with your own settings.
 
 
 Install
@@ -22,10 +22,10 @@ Install
 ```
 # Clone your personal fork here.
 # Files in ~/.dotfiles-local take precedence over ~/.dotfiles.
-git clone https://github.com/leroux/dotfiles-local ~/.dotfiles-local
+git clone https://github.com/andrewtchin/dotfiles-local ~/.dotfiles-local
 
 # Clone this repo.
-git clone https://github.com/leroux/dotfiles ~/.dotfiles
+git clone https://github.com/andrewtchin/dotfiles ~/.dotfiles
 
 # `bin/rcup` will install rcm if it is not available in $PATH.
 RCRC="~/.dotfiles/rcrc" ~/.dotfiles/bin/rcup
