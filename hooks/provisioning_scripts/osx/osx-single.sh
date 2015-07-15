@@ -29,9 +29,15 @@ brew install rcm
 echo "\n\033[0;32m>>> Install cmake\033[0m"
 brew install cmake
 
-echo "\n\033[0;32m>>> Run rcm\033[0m"
+echo "\n\033[0;32m>>> Clone dotfiles\033[0m"
 git config --global url."https://".insteadOf git://
 git clone https://github.com/andrewtchin/dotfiles-local "$DOTFILES_LOCAL_DIR"
 git clone https://github.com/andrewtchin/dotfiles "$DOTFILES_DIR"
+
+echo "\n\033[0;32m>>> Init submodules\033[0m"
+cd "$DOTFILES_DIR"
+git submodule update --init --recursive
+
+echo "\n\033[0;32m>>> Run rcm\033[0m"
 RCRC="$DOTFILES_DIR/rcrc"
 "$DOTFILES_DIR/bin/rcup"
