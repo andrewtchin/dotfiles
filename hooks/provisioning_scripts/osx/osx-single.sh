@@ -24,7 +24,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 echo "\n\033[0;32m>>> Install rcm\033[0m"
 brew tap thoughtbot/formulae
-brew install rcm
+brew reinstall rcm
 
 echo "\n\033[0;32m>>> Install cmake\033[0m"
 brew install cmake
