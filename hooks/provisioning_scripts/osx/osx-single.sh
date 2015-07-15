@@ -27,6 +27,7 @@ brew tap thoughtbot/formulae
 brew install rcm
 
 echo "\n\033[0;32m>>> Run rcm\033[0m"
+git config --global url."https://".insteadOf git://
 git clone https://github.com/andrewtchin/dotfiles-local "$DOTFILES_LOCAL_DIR"
 git clone https://github.com/andrewtchin/dotfiles "$DOTFILES_DIR"
 RCRC="$DOTFILES_DIR/rcrc"
