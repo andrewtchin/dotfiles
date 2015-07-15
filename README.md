@@ -34,7 +34,7 @@ RCRC="~/.dotfiles/rcrc" ~/.dotfiles/bin/rcup
 OSX one step install
 --------------------
 ```
-curl -Lo https://raw.githubusercontent.com/andrewtchin/dotfiles/master/hooks/provisioning_scripts/osx/osx-single.sh /tmp/osx-single.sh
+curl -Lo /tmp/osx-single.sh https://raw.githubusercontent.com/andrewtchin/dotfiles/master/hooks/provisioning_scripts/osx/osx-single.sh
 chmod +x /tmp/osx-single.sh
 /tmp/osx-single.sh
 ```
