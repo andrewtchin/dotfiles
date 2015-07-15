@@ -31,8 +31,10 @@ git clone https://github.com/andrewtchin/dotfiles ~/.dotfiles
 RCRC="~/.dotfiles/rcrc" ~/.dotfiles/bin/rcup
 ```
 
-
-Provisioning
-------------
-You can also pass `PROVISION=yes` as an environment variable to rcup to execute OS-specific provisioning scripts.
-So far I've only added OS X provisioning scripts.
+OSX one step install
+--------------------
+```
+curl -Lo https://raw.githubusercontent.com/andrewtchin/dotfiles/master/hooks/provisioning_scripts/osx/osx-single.sh /tmp/osx-single.sh
+chmod +x /tmp/osx-single.sh
+/tmp/osx-single.sh
+```
