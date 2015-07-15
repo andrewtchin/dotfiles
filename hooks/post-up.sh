@@ -26,6 +26,7 @@ if [ -d "$YCM_DIR" ] &&
    [ ! $(ls -A $YCM_DIR/third_party/ycmd/ycm_core.* >/dev/null 2>&1) ]; then
     echo "Building YCM."
     cd $YCM_DIR
+    git submodule update --init --recursive
     ./install.sh --clang-completer || :
     cd ~-
 fi
