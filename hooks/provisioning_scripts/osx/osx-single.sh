@@ -1,6 +1,6 @@
-$XCODE_CLI_TOOLS="/tmp/xcode-cli-tools.sh"
-$DOTFILES_DIR="$HOME/.dotfiles"
-$DOTFILES_LOCAL_DIR="$HOME/.dotfiles-local"
+XCODE_CLI_TOOLS="/tmp/xcode-cli-tools.sh"
+DOTFILES_DIR="$HOME/.dotfiles"
+DOTFILES_LOCAL_DIR="$HOME/.dotfiles-local"
 
 echo "\n\033[0;32m>>> Pre-install cleanup\033[0m"
 if [ "$XCODE_CLI_TOOLS" ]; then
