@@ -154,12 +154,15 @@ echo "Add ability to toggle between Light and Dark mode in Yosemite using ctrl+o
 # http://www.reddit.com/r/apple/comments/2jr6s2/1010_i_found_a_way_to_dynamically_switch_between/
 sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true
 
+<<'COMMENT'
+Doesn't work on corporate...
 find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
   "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
   "Terminal" "Transmission"; do
   killall "${app}" > /dev/null 2>&1 || true
 done
+COMMENT
 
 echo ""
 echo "Show icons on Desktop."
