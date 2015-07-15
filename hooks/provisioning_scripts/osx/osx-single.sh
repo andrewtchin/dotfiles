@@ -26,6 +26,12 @@ echo "\n\033[0;32m>>> Install rcm\033[0m"
 brew tap thoughtbot/formulae
 brew install rcm
 
+echo "\n\033[0;32m>>> Install cmake\033[0m"
+brew install cmake
+
+echo "\n\033[0;32m>>> Update vim\033[0m"
+brew install vim
+
 echo "\n\033[0;32m>>> Run rcm\033[0m"
 git config --global url."https://".insteadOf git://
 git clone https://github.com/andrewtchin/dotfiles-local "$DOTFILES_LOCAL_DIR"
