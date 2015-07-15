@@ -39,6 +39,10 @@
   " Line numbers
   set number
   set numberwidth=5
+
+  " Persistent Undo
+  set undofile
+  set undodir=~/.vimundo
 " }
 
 " Local config

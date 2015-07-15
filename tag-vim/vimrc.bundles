@@ -7,10 +7,17 @@ call plug#begin('~/.vim/bundle')
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
+Plug 'ntpeters/vim-better-whitespace'
 
 " Python
 Plug 'klen/python-mode'
 Plug 'davidhalter/jedi-vim'
+
+" YAML
+Plug 'ingydotnet/yaml-vim'
+
+" Ansible
+Plug 'chase/vim-ansible-yaml'
 
 " Colorschemes
 Plug 'vim-scripts/wombat256.vim'

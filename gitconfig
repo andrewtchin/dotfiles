@@ -1,21 +1,28 @@
 [core]
-    excludesfile = ~/.gitignore
-    autocrlf = input
-    safecrlf = false
-    editor = vim
+  excludesfile = ~/.gitignore
+  autocrlf = input
+  safecrlf = false
+  editor = vim
+[branch]
+  autosetupmerge = always
+  rebase = true
 [push]
-    # push only the current branch to the one that git pull would pull from
-    # prevents accidental pushes
-    default = current
+  # push only the current branch to the one that git pull would pull from
+  # prevents accidental pushes
+  default = current
+[pull]
+  ff = only
+[merge]
+  ff = false
 [alias]
-    lg = "log --oneline --decorate --all --graph -30"
-    cara = "commit --amend --reset-author"
-    email-guess = "!~/.git-scripts/email-guess.sh"
+  lg = "log --oneline --decorate --all --graph -30"
+  cara = "commit --amend --reset-author"
+  email-guess = "!~/.git-scripts/email-guess.sh"
 [color]
-    ui = auto
+  ui = auto
 [help]
-    autocorrect = 1
+  autocorrect = 1
 [rerere]
-    enabled = true
+  enabled = true
 [include]
-    path = ~/.gitconfig.local
+  path = ~/.gitconfig.local
