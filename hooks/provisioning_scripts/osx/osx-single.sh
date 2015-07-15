@@ -29,6 +29,9 @@ brew reinstall rcm
 echo "\n\033[0;32m>>> Install cmake\033[0m"
 brew install cmake
 
+echo "\n\033[0;32m>>> Install vim\033[0m"
+brew install vim
+
 echo "\n\033[0;32m>>> Clone dotfiles\033[0m"
 git config --global url."https://".insteadOf git://
 git clone https://github.com/andrewtchin/dotfiles-local "$DOTFILES_LOCAL_DIR"
