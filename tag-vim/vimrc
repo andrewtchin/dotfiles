@@ -33,7 +33,7 @@
   set expandtab
 
   " Make it obvious where 80 characters is
-  set textwidth=80
+  set textwidth=100
   set colorcolumn=+1
 
   " Line numbers
@@ -41,8 +41,11 @@
   set numberwidth=5
 
   " Persistent Undo
-  set undofile
-  set undodir=~/.vimundo
+  if has("persistent_undo")
+    silent !mkdir ~/.vim/undodir > /dev/null 2>&1
+    set undofile
+    set undodir='~/.vim/undodir/'
+  endif
 " }
 
 " Local config
