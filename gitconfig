@@ -3,15 +3,13 @@
   autocrlf = input
   safecrlf = false
   editor = vim
-[branch]
-  autosetupmerge = always
-  rebase = true
 [push]
   # push only the current branch to the one that git pull would pull from
   # prevents accidental pushes
   default = current
 [pull]
   ff = only
+  rebase = true
 [merge]
   ff = false
 [alias]
