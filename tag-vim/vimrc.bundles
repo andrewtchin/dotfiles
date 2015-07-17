@@ -4,10 +4,14 @@ end
 
 call plug#begin('~/.vim/bundle')
 
+" General
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'ntpeters/vim-better-whitespace'
+
+" Colorschemes
+Plug 'vim-scripts/wombat256.vim'
 
 " Python
 Plug 'klen/python-mode'
@@ -19,8 +23,8 @@ Plug 'ingydotnet/yaml-vim'
 " Ansible
 Plug 'chase/vim-ansible-yaml'
 
-" Colorschemes
-Plug 'vim-scripts/wombat256.vim'
+" Go
+Plug 'fatih/vim-go'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
