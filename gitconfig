@@ -13,7 +13,7 @@
 [merge]
   ff = false
 [alias]
-  lg = "log --oneline --decorate --all --graph -30"
+  lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
   cara = "commit --amend --reset-author"
   email-guess = "!~/.git-scripts/email-guess.sh"
 [color]
