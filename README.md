@@ -20,7 +20,7 @@ Install
 ```
 # Clone your personal fork here.
 # Files in ~/.dotfiles-local take precedence over ~/.dotfiles.
-git clone git@github.com:leroux/dotfiles.git ~/.dotfiles-local
+git clone git@github.com:leroux/dotfiles-local.git ~/.dotfiles-local
 
 # Clone this repo.
 git clone git@github.com:leroux/dotfiles.git ~/.dotfiles --recursive
