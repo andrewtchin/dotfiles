@@ -20,10 +20,10 @@ Install
 ```
 # Clone your personal fork here.
 # Files in ~/.dotfiles-local take precedence over ~/.dotfiles.
-git clone https://github.com/leroux/dotfiles-local ~/.dotfiles-local
+git clone git@github.com:leroux/dotfiles.git ~/.dotfiles-local
 
 # Clone this repo.
-git clone https://github.com/leroux/dotfiles ~/.dotfiles --recursive
+git clone git@github.com:leroux/dotfiles.git ~/.dotfiles --recursive
 
 # `bin/rcup` will install rcm if it is not available in $PATH.
 RCRC="$HOME/.dotfiles/rcrc" rcup
