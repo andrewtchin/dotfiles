@@ -6,10 +6,8 @@ Inspired by [thoughtbot dotfiles](https://github.com/thoughtbot/dotfiles) and ma
 
 Requirements
 ------------
-Set zsh as your login shell:
-```
-chsh -s $(which zsh)  # you may have to point to /bin/zsh for brew-installed zsh
-```
+- Install [rcm](https://github.com/thoughtbot/rcm).
+- `chsh -s $(which zsh)  # you may have to point to /bin/zsh for brew-installed zsh`
 
 
 User-Specific Customizations
@@ -25,10 +23,10 @@ Install
 git clone https://github.com/leroux/dotfiles-local ~/.dotfiles-local
 
 # Clone this repo.
-git clone https://github.com/leroux/dotfiles ~/.dotfiles
+git clone https://github.com/leroux/dotfiles ~/.dotfiles --recursive
 
 # `bin/rcup` will install rcm if it is not available in $PATH.
-RCRC="~/.dotfiles/rcrc" ~/.dotfiles/bin/rcup
+RCRC="$HOME/.dotfiles/rcrc" rcup
 ```
 
 

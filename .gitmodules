@@ -1,6 +1,3 @@
-[submodule "bin/rcm"]
-  path = bin/rcm
-  url = https://github.com/thoughtbot/rcm
 [submodule "tag-dbg/peda"]
   path = tag-dbg/peda
   url = https://github.com/longld/peda
