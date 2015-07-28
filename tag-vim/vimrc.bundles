@@ -9,13 +9,13 @@ Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'davidhalter/jedi-vim'
 
 " Colorschemes
 Plug 'vim-scripts/wombat256.vim'
 
 " Python
 Plug 'klen/python-mode'
-Plug 'davidhalter/jedi-vim'
 
 " YAML
 Plug 'ingydotnet/yaml-vim'
@@ -25,6 +25,9 @@ Plug 'chase/vim-ansible-yaml'
 
 " Go
 Plug 'fatih/vim-go'
+
+" CMake
+Plug 'jalcine/cmake.vim'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
