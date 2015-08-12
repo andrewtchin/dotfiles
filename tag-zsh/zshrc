@@ -23,17 +23,10 @@ antigen bundles <<EOBUNDLES
     autojump
     brew
     colored-man
-    command-not-found
-    common-aliases
-    compleat
-    cp
-    debian
     dirpersist
     encode64
     gitfast
-    osx
     pip
-    python
 EOBUNDLES
 antigen theme "${ZSH_THEME:-robbyrussell}"
 antigen apply
