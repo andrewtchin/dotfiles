@@ -48,6 +48,7 @@ casks=(
     iterm2
     java
     lastpass
+    logitech-control-center
     seil
     skype
     teamviewer
