@@ -1,3 +1,5 @@
 # Global gitignore
 
+# Python
 .ropeproject
+venv
