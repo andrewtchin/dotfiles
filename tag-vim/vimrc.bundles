@@ -10,6 +10,12 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'davidhalter/jedi-vim'
+Plug 'tpope/vim-speeddating' "use CTRL-A/CTRL-X to increment dates, times, and more
+Plug 'vim-scripts/taglist.vim'
+Plug 'vim-scripts/Tagbar'
+
+" Org-mode
+Plug 'jceb/vim-orgmode'
 
 " Colorschemes
 Plug 'vim-scripts/wombat256.vim'

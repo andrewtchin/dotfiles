@@ -19,6 +19,7 @@ antigen use oh-my-zsh
 antigen bundles <<EOBUNDLES
     zsh-users/zsh-syntax-highlighting
     zsh-users/zsh-history-substring-search
+    zsh-users/zsh-completions
 
     autojump
     brew

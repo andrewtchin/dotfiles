@@ -11,11 +11,12 @@
   filetype plugin indent on
   syntax on
 
+  " Files, backups
   set backspace=2
   set nobackup
   set nowritebackup
   set noswapfile
-  set history=50
+  set history=500
   set ruler         " show the cursor position all the time
   set showcmd       " display incomplete commands
   set incsearch     " do incremental searching
@@ -23,14 +24,18 @@
   set autowrite     " Automatically :write before running commands
   set list listchars=tab:»·,trail:·,nbsp:· " Display extra whitespace
 
+  " Mouse
   set mouse=a " Automatically enable mouse support
   set mousehide " Hide mouse while typing
 
-  " Softtabs, 2 spaces
+  " Text, tab and indent
   set tabstop=2
   set shiftwidth=2
   set shiftround
   set expandtab
+  set ai " Auto indent
+  set si " Smart indent
+  set wrap
 
   set textwidth=100
   set colorcolumn=+1
@@ -39,11 +44,17 @@
   set number
   set numberwidth=5
 
+  " :W sudo saves the file
+  " (useful for handling the permission-denied error)
+  command W w !sudo tee % > /dev/null
+
   " Persistent Undo
   if has("persistent_undo")
     silent !mkdir ~/.vim/undodir > /dev/null 2>&1
-    set undofile
     set undodir='~/.vim/undodir/'
+    set undofile
+    set undolevels=1000 "maximum number of changes that can be undone
+    set undoreload=10000 "maximum number lines to save for undo on a buffer reload
   endif
 
   " Clipboard (copy-pasta)
