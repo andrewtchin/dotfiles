@@ -5,7 +5,9 @@
 " }
 
 " General {
+  " Leaders
   let mapleader = ","
+  let maplocalleader = "\\"
 
   " Syntax higlighting
   filetype plugin indent on
