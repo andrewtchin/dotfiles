@@ -8,6 +8,7 @@ call plug#begin('~/.vim/bundle')
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat' "enable repeating supported plugin maps with "."
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'davidhalter/jedi-vim'
 Plug 'tpope/vim-speeddating' "use CTRL-A/CTRL-X to increment dates, times, and more
