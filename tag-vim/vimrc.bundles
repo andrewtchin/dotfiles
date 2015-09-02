@@ -15,6 +15,9 @@ Plug 'tpope/vim-speeddating' "use CTRL-A/CTRL-X to increment dates, times, and m
 Plug 'vim-scripts/taglist.vim'
 Plug 'vim-scripts/Tagbar'
 
+" Git
+Plug 'tpope/vim-fugitive'
+
 " Org-mode
 Plug 'jceb/vim-orgmode'
 
