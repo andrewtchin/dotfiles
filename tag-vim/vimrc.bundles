@@ -1,1 +1,43 @@
-spf13-vim/.vimrc.bundles
+if &compatible
+  set nocompatible
+end
+
+call plug#begin('~/.vim/bundle')
+
+" General
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat' "enable repeating supported plugin maps with "."
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'davidhalter/jedi-vim'
+Plug 'tpope/vim-speeddating' "use CTRL-A/CTRL-X to increment dates, times, and more
+Plug 'vim-scripts/taglist.vim'
+Plug 'vim-scripts/Tagbar'
+
+" Org-mode
+Plug 'jceb/vim-orgmode'
+
+" Colorschemes
+Plug 'vim-scripts/wombat256.vim'
+
+" Python
+Plug 'klen/python-mode'
+
+" YAML
+Plug 'ingydotnet/yaml-vim'
+
+" Ansible
+Plug 'chase/vim-ansible-yaml'
+
+" Go
+Plug 'fatih/vim-go'
+
+" CMake
+Plug 'jalcine/cmake.vim'
+
+if filereadable(expand("~/.vimrc.bundles.local"))
+  source ~/.vimrc.bundles.local
+endif
+
+call plug#end()

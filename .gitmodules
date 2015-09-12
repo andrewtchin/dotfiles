@@ -1,9 +1,6 @@
 [submodule "bin/rcm"]
 	path = bin/rcm
 	url = https://github.com/thoughtbot/rcm
-[submodule "tag-vim/spf13-vim"]
-	path = tag-vim/spf13-vim
-	url = https://github.com/spf13/spf13-vim
 [submodule "tag-zsh/antigen"]
 	path = tag-zsh/antigen
 	url = https://github.com/zsh-users/antigen
