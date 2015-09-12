@@ -4,9 +4,6 @@
 [submodule "tag-vim/spf13-vim"]
 	path = tag-vim/spf13-vim
 	url = https://github.com/spf13/spf13-vim
-[submodule "tag-dbg/peda"]
-	path = tag-dbg/peda
-	url = https://github.com/longld/peda
 [submodule "tag-zsh/antigen"]
 	path = tag-zsh/antigen
 	url = https://github.com/zsh-users/antigen
