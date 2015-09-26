@@ -41,6 +41,7 @@ pkgs=(
     tree
     jq
     the_silver_searcher
+    tmux
 )
 
 casks=(
