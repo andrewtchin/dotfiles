@@ -42,6 +42,7 @@ pkgs=(
     jq
     the_silver_searcher
     tmux
+    git-crypt
 )
 
 casks=(
