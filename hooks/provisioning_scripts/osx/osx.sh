@@ -23,44 +23,46 @@ taps=(
 )
 
 pkgs=(
-    brew-cask
+    aspell
+    autojump
+    bitlbee
+    cmake
+    coreutils
+    git-crypt
+    htop
+    irssi
+    jq
+    keybase
     openssh
     rcm
-    zsh
-    vim
-    irssi
-    autojump
-    wget
+    sshrc
     terminal-notifier
-    cmake
-    bitlbee
-    keybase
-    youtube-dl
-    coreutils
-    aspell
-    tree
-    jq
     the_silver_searcher
     tmux
-    git-crypt
+    tree
+    vim
+    wget
+    youtube-dl
+    zsh
 )
 
 casks=(
-    font-inconsolata-dz-for-powerline
-    google-chrome
-    iterm2
-    firefox
-    spotify
-    vlc
+    audacity
+    bittorrent-sync
     caffeine
+    firefox
+    flux
+    font-inconsolata-dz-for-powerline
+    font-hack
+    google-chrome
     gpgtools
+    iterm2
     java
     playonmac
-    xquartz
+    spotify
+    vlc
     wireshark
-    bittorrent-sync
-    flux
-    audacity
+    xquartz
 )
 
 main () {
@@ -93,7 +95,7 @@ setup_brew () {
 
     brew install "${pkgs[@]}"
 
-    brew install brew-cask
+    brew install caskroom/cask/brew-cask
     brew cask install "${casks[@]}"
 }
 
