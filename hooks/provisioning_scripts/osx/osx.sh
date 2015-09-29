@@ -93,7 +93,11 @@ setup_brew () {
         brew tap "${tap}"
     done
 
+    # Re-link any already-existing brews.
+    brew list -1 | while read line; do brew unlink $line; brew link $line; done
+
     brew install "${pkgs[@]}"
+    brew link "${pkgs[@]}"
 
     brew install caskroom/cask/brew-cask
     brew cask install "${casks[@]}"
