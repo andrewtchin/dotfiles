@@ -44,6 +44,7 @@ pkgs=(
     wget
     youtube-dl
     zsh
+    shellcheck
 )
 
 casks=(
