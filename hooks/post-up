@@ -10,9 +10,6 @@ __root="$(cd "$(dirname "${__dir}")" && pwd)" # <-- change this
 
 cd "${__root}"
 
-# Install crontab
-crontab ~/.crontab
-
 # Vim Plug (vim plugin package management)
 if [ ! -e "$HOME/.vim/autoload/plug.vim" ]; then
   curl -sfLo "$HOME/.vim/autoload/plug.vim" --create-dirs \
