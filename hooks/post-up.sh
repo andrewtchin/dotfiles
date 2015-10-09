@@ -5,9 +5,6 @@ set -o pipefail
 set -o nounset
 # set -o xtrace
 
-# Install crontab
-crontab ~/.crontab
-
 # Install vim bundles.
 if [ ! "$(ls -A $HOME/.vim/bundle >/dev/null 2>&1)" ]; then
   vim +BundleInstall +qa
