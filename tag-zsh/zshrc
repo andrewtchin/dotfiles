@@ -19,21 +19,15 @@ antigen use oh-my-zsh
 antigen bundles <<EOBUNDLES
     zsh-users/zsh-syntax-highlighting
     zsh-users/zsh-history-substring-search
+    zsh-users/zsh-completions
 
     autojump
     brew
     colored-man
-    command-not-found
-    common-aliases
-    compleat
-    cp
-    debian
     dirpersist
     encode64
     gitfast
-    osx
     pip
-    python
 EOBUNDLES
 antigen theme "${ZSH_THEME:-robbyrussell}"
 antigen apply

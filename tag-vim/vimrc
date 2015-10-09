@@ -22,18 +22,17 @@
   set ruler         " show the cursor position all the time
   set showcmd       " display incomplete commands
   set incsearch     " do incremental searching
-  set hlsearch      " highlight search terms
   set laststatus=2  " Always display the status line
   set autowrite     " Automatically :write before running commands
   set list listchars=tab:»·,trail:·,nbsp:· " Display extra whitespace
 
   " Mouse
-  " set mouse=a " Automatically enable mouse support
-  " set mousehide " Hide mouse while typing
+  set mouse=a " Automatically enable mouse support
+  set mousehide " Hide mouse while typing
 
   " Text, tab and indent
-  set tabstop=4
-  set shiftwidth=4
+  set tabstop=2
+  set shiftwidth=2
   set shiftround
   set expandtab
   set ai " Auto indent

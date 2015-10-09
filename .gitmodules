@@ -1,6 +1,6 @@
-[submodule "bin/rcm"]
-	path = bin/rcm
-	url = https://github.com/thoughtbot/rcm
+[submodule "tag-dbg/peda"]
+  path = tag-dbg/peda
+  url = https://github.com/longld/peda
 [submodule "tag-zsh/antigen"]
-	path = tag-zsh/antigen
-	url = https://github.com/zsh-users/antigen
+  path = tag-zsh/antigen
+  url = git@github.com:zsh-users/antigen.git
