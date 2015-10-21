@@ -18,9 +18,6 @@ Host bitbucket.org
     KexAlgorithms diffie-hellman-group-exchange-sha256
     MACs hmac-ripemd160
 
-Host 52.26.219.45
-    ForwardAgent yes
-
 Host *
     HashKnownHosts yes
     Protocol 2
