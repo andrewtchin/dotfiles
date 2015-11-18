@@ -10,8 +10,10 @@
   let maplocalleader = "\\"
 
   " Colors
-  set background=dark
-  colorscheme solarized
+  if filereadable("~/.vim/colors/solarized.vim")
+    set background=dark
+    colorscheme solarized
+  endif
 
   " Syntax higlighting
   filetype plugin indent on
