@@ -23,7 +23,6 @@ antigen bundles <<EOBUNDLES
 
     autojump
     brew
-    colored-man
     dirpersist
     encode64
     gitfast
