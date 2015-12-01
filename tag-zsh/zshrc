@@ -28,5 +28,5 @@ antigen bundles <<EOBUNDLES
     gitfast
     pip
 EOBUNDLES
-antigen theme "${ZSH_THEME:-robbyrussell}"
+antigen theme pygmalion
 antigen apply
