@@ -30,3 +30,8 @@ antigen bundles <<EOBUNDLES
 EOBUNDLES
 antigen theme pygmalion
 antigen apply
+
+if [[ `uname` == 'Linux' ]]
+then
+  eval `dircolors $HOME/.dircolors`
+fi
