@@ -35,3 +35,5 @@ if [[ `uname` == 'Linux' ]]
 then
   eval `dircolors $HOME/.dircolors`
 fi
+
+alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
