@@ -1,22 +1,22 @@
-andrewtchin's dotfiles
-=================
+# andrewtchin's dotfiles
+
 Inspired by [thoughtbot dotfiles](https://github.com/thoughtbot/dotfiles) and made possible by
 [rcm](https://github.com/thoughtbot/rcm), both of which are from [thoughtbot](https://github.com/thoughtbot).
 
+## Requirements
 
-Requirements
-------------
 - Install [rcm](https://github.com/thoughtbot/rcm).
 - `chsh -s $(which zsh)  # you may have to point to /bin/zsh for brew-installed zsh`
 
 
-User-Specific Customizations
-----------------------------
+## User-Specific Customizations
+
 Fork [dotfiles-local](https://github.com/andrewtchin/dotfiles-local) and tune with your own settings.
 
 
-Install
--------
+## Install
+
+WARNING: This installs an authorized_keys file. Replace with your own.
 ```
 # Clone your personal fork here.
 # Files in ~/.dotfiles-local take precedence over ~/.dotfiles.
