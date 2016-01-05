@@ -6,7 +6,6 @@ call plug#begin('~/.vim/bundle')
 
 " General
 Plug 'scrooloose/syntastic'
-Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat' "enable repeating supported plugin maps with "."
 Plug 'ntpeters/vim-better-whitespace'
