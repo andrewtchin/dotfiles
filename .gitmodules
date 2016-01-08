@@ -1,3 +1,6 @@
 [submodule "tag-dbg/peda"]
   path = tag-dbg/peda
   url = https://github.com/longld/peda
+[submodule "tag-zsh/antigen"]
+  path = tag-zsh/antigen
+  url = https://github.com/zsh-users/antigen
