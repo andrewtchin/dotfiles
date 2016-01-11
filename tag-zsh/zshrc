@@ -13,7 +13,7 @@ fi
 # Python
 export PYTHONSTARTUP="${HOME}/.pythonrc"
 
-# antigen!!!
+# antigen
 source ~/.antigen/antigen.zsh
 antigen use oh-my-zsh
 antigen bundles <<EOBUNDLES
@@ -35,5 +35,3 @@ if [[ `uname` == 'Linux' ]]
 then
   eval `dircolors $HOME/.dircolors`
 fi
-
-alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
