@@ -21,12 +21,17 @@ antigen bundles <<EOBUNDLES
     zsh-users/zsh-history-substring-search
     zsh-users/zsh-completions
 
-    autojump
+    aws
     brew
-    dirpersist
-    encode64
+    docker
+    golang
     gitfast
     pip
+    python
+    vagrant
+
+    encode64
+    extract
 EOBUNDLES
 antigen theme pygmalion
 antigen apply
