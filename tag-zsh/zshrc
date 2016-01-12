@@ -39,4 +39,7 @@ antigen apply
 if [[ `uname` == 'Linux' ]]
 then
   eval `dircolors $HOME/.dircolors`
+elif [[ `uname` == 'Darwin' ]]
+then
+  eval `gdircolors $HOME/.dircolors`
 fi
