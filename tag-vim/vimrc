@@ -45,6 +45,8 @@
   set ai " Auto indent
   set si " Smart indent
   set wrap
+  set linebreak
+  set nolist
 
   set textwidth=100
   set colorcolumn=+1
