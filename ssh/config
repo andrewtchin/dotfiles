@@ -31,7 +31,8 @@ Host *
     StrictHostKeyChecking ask
     TCPKeepAlive no
     VisualHostKey yes
-    UseRoaming no # CVE-2016-0777
+    # CVE-2016-0777
+    UseRoaming no
 
     # Compatibility config https://github.com/ioerror/duraconf
     # MACs hmac-sha2-512,hmac-sha2-256
