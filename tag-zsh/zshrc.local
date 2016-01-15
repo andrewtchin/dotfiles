@@ -29,6 +29,8 @@ alias gitclean='git clean -fdx && git submodule foreach --recursive git clean -f
 alias gitsubup='git submodule update --init --recursive'
 alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
 alias githttps='git config --global url."https://".insteadOf git://'
+alias gitcam='git commit -am'
+alias gitpom='git push origin master'
 
 if [[ `uname` == 'Darwin' ]]
 then
