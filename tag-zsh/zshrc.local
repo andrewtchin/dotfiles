@@ -1,0 +1,36 @@
+export EDITOR='vim'
+export GPG_TTY=`tty`
+export PATH="/usr/local/bin:/usr/local/sbin:${PATH}"
+[[ -d "$HOME/go" ]] && export GOPATH=$HOME/go
+
+# Secrets
+[[ -s "$HOME/.env_secrets" ]] && source "$HOME/.env_secrets"
+
+# Aliases
+which htop >/dev/null     && alias top=htop
+which ack-grep >/dev/null && alias ack=ack-grep
+which vim >/dev/null      && alias vi=vim
+
+alias md='mkdir'
+alias gh='cd ~/github'
+
+alias grep='grep --color=auto'
+alias grni='grep -rni'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias la='ls -A'
+alias ll='ls -alF'
+alias l='ls -CF'
+
+# Git aliases
+alias gitreset='git reset --hard && git submodule foreach --recursive git reset --hard'
+alias gitclean='git clean -fdx && git submodule foreach --recursive git clean -fdx'
+alias gitsubup='git submodule update --init --recursive'
+alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
+alias githttps='git config --global url."https://".insteadOf git://'
+
+if [[ `uname` == 'Darwin' ]]
+then
+  alias dns='scutil --dns'
+fi

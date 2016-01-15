@@ -1,0 +1,6 @@
+silent! colorscheme wombat256
+
+""" Python
+au FileType python set textwidth=100
+let g:pymode_lint_ignore="E501,W601"
+set nofoldenable
