@@ -13,6 +13,9 @@ Plug 'davidhalter/jedi-vim'
 Plug 'vim-scripts/taglist.vim'
 Plug 'vim-scripts/Tagbar'
 
+" Colorscheme
+Plug 'altercation/vim-colors-solarized'
+
 " Git
 Plug 'tpope/vim-fugitive'
 
