@@ -22,6 +22,7 @@ alias egrep='egrep --color=auto'
 alias la='ls -A'
 alias ll='ls -alF'
 alias l='ls -CF'
+alias tree3='tree -L 3'
 
 # Git aliases
 alias gitreset='git reset --hard && git submodule foreach --recursive git reset --hard'
