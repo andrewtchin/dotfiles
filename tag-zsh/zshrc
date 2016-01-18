@@ -1,5 +1,3 @@
-[ -f ~/.zshrc.local ] && source ~/.zshrc.local
-
 # ssh-agent
 # Predictable SSH authentication socket location
 # so that ssh-agent works on reattach to tmux sessions.
@@ -43,3 +41,5 @@ elif [[ `uname` == 'Darwin' ]]
 then
   eval `gdircolors $HOME/.dircolors`
 fi
+
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
