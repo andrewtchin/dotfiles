@@ -21,7 +21,7 @@ alias egrep='egrep --color=auto'
 
 alias la='ls -A'
 alias ll='ls -alF'
-alias l='ls -CF'
+alias l='ls -alF'
 alias tree3='tree -L 3'
 
 # Git aliases
