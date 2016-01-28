@@ -23,6 +23,10 @@ Host enatai-gerrit.eng.vmware.com
     KexAlgorithms diffie-hellman-group1-sha1
     MACs hmac-sha1
 
+Host suite
+    MACs hmac-sha1
+    KexAlgorithms diffie-hellman-group-exchange-sha1
+
 Host *
     HashKnownHosts yes
     Protocol 2
