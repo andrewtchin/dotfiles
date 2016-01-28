@@ -2,6 +2,7 @@ export EDITOR='vim'
 export GPG_TTY=`tty`
 export PATH="/usr/local/bin:/usr/local/sbin:${PATH}"
 [[ -d "$HOME/go" ]] && export GOPATH=$HOME/go
+[[ -n "$GOPATH" ]] && export PATH=$PATH:$GOPATH/bin 
 
 # Secrets
 [[ -s "$HOME/.env_secrets" ]] && source "$HOME/.env_secrets"
