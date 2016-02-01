@@ -24,3 +24,9 @@
   enabled = true
 [include]
   path = ~/.gitconfig.local
+[transfer]
+  fsckobjects = true
+[fetch]
+  fsckobjects = true
+[receive]
+  fsckObjects = true
