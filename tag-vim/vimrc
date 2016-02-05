@@ -42,9 +42,12 @@
   set expandtab
   set ai " Auto indent
   set si " Smart indent
+
+  " Show column limit, soft wrap but don't add breaks
   set wrap
   set linebreak
   set nolist
+  set formatoptions=l
 
   set textwidth=100
   set colorcolumn=+1
