@@ -29,9 +29,10 @@
   enabled = true
 [include]
   path = ~/.gitconfig.local
-[transfer]
-  fsckobjects = true
-[fetch]
-  fsckobjects = true
-[receive]
-  fsckObjects = true
+# Causes issues when cloning oh-my-zsh
+#[transfer]
+#  fsckobjects = true
+#[fetch]
+#  fsckobjects = true
+#[receive]
+#  fsckObjects = true
