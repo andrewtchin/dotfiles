@@ -32,7 +32,7 @@
   set list listchars=tab:»·,trail:·,nbsp:· " Display extra whitespace
 
   " Mouse
-  set mouse=a " Automatically enable mouse support
+  set mouse=r
   set mousehide " Hide mouse while typing
 
   " Text, tab and indent
