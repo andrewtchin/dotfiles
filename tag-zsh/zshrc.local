@@ -17,6 +17,7 @@ alias md='mkdir'
 alias gh='cd ~/github'
 
 alias grep='grep --color=auto'
+alias grn='grep -rn'
 alias grni='grep -rni'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
