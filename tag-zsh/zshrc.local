@@ -17,8 +17,8 @@ alias md='mkdir'
 alias gh='cd ~/github'
 
 alias grep='grep --color=auto'
-alias grn='grep -rn'
-alias grni='grep -rni'
+alias gr='grep -rn'
+alias gri='grep -rni'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
@@ -29,6 +29,7 @@ alias tree3='tree -L 3'
 
 # Git aliases
 alias gitreset='git reset --hard && git submodule foreach --recursive git reset --hard'
+alias gitrup='git reset --hard upstream/master'
 alias gitclean='git clean -fdx && git submodule foreach --recursive git clean -fdx'
 alias gitsubup='git submodule update --init --recursive'
 alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
