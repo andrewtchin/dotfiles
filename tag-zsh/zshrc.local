@@ -23,8 +23,8 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 alias la='ls -A'
-alias ll='ls -alF'
-alias l='ls -alF'
+alias ll='ls -alhF'
+alias l='ls -alhF'
 alias tree3='tree -L 3'
 alias dutop='du -chs * | sort -rn | head'
 
