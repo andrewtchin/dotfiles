@@ -48,7 +48,7 @@ ClientAliveInterval 600
 ClientAliveCountMax 3
 TCPKeepAlive no
 
-X11Forwarding yes
+X11Forwarding no
 X11DisplayOffset 10
 PrintMotd no
 PrintLastLog yes
