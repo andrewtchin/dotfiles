@@ -1,7 +1,8 @@
 # vi: ft=gitconfig
 
 [user]
-    name = Andrew Chin
-    email = andrew@andrewtchin.com
+name = Andrew Chin
+email = andrew@andrewtchin.com
+
 [init]
-    templatedir = ~/.git-scripts/templates
+templatedir = ~/.git-scripts/templates

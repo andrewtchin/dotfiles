@@ -1,5 +1,8 @@
 # Global gitignore
 
+# OS X
+.DS_Store
+
 # Python
 .ropeproject
 venv
