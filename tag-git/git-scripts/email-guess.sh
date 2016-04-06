@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 remote=`git remote -v | awk '/\(push\)$/ {print $2}'`
-email="andrew@andrewtchin.com" # default
+email="git@andrewtchin.com" # default
 hostname=$(hostname -s)
 
-if [[ $hostname == *CORPORATE* ]]; then
+if [[ $remote == *github.com*vic.git ]]; then
     email="andrewchin@vmware.com"
 fi
 
