@@ -15,6 +15,7 @@ which vim >/dev/null      && alias vi=vim
 
 alias md='mkdir'
 alias gh='cd ~/github'
+alias vic='cd ~/go/src/github.com/vmware/vic'
 
 alias grep='grep --color=auto'
 alias gr='grep -rn'
