@@ -17,4 +17,7 @@ git clone git@github.com:andrewtchin/dotfiles.git ~/.dotfiles --recursive
 
 # `bin/rcup` will install rcm if it is not available in $PATH.
 RCRC="$HOME/.dotfiles/rcrc" rcup
+
+# To skip authorized_keys file:
+RCRC="$HOME/.dotfiles/rcrc" rcup -x authorized_keys
 ```
