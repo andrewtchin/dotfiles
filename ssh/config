@@ -9,9 +9,9 @@
 # Thus, host-specific definitions should be at the beginning of the
 # configuration file, and defaults at the end.
 
-Host github.com
-    KexAlgorithms curve25519-sha256@libssh.org,ecdh-sha2-nistp256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
-    HostKeyAlgorithms ssh-rsa
+#Host github.com
+#    KexAlgorithms curve25519-sha256@libssh.org,ecdh-sha2-nistp256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+#    HostKeyAlgorithms ssh-rsa
 
 Host bitbucket.org
     Ciphers aes256-ctr
