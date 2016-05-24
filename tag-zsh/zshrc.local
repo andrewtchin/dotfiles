@@ -2,7 +2,7 @@ export EDITOR='vim'
 export LESS='eFRX'
 export GPG_TTY=`tty`
 [[ -d "$HOME/go" ]] && export GOPATH=$HOME/go
-[[ -n "$GOPATH" ]] && export PATH=$PATH:/usr/local/go/bin
+[[ -n "$GOPATH" ]] && export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 # Secrets
 [[ -s "$HOME/.env_secrets" ]] && source "$HOME/.env_secrets"
