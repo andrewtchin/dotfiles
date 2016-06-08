@@ -38,7 +38,7 @@ alias githttps='git config --global url."https://".insteadOf git://'
 alias gitcam='git commit -am'
 alias gitpom='git push origin master'
 alias gitru='git remote update'
-alias gitrum='git rebase upstream/master"
+alias gitrum='git rebase upstream/master'
 
 if [[ `uname` == 'Darwin' ]]
 then
