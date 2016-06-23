@@ -30,7 +30,7 @@ alias dutop='du -chs * | sort -rn | head'
 
 # Git aliases
 alias gitreset='git reset --hard && git submodule foreach --recursive git reset --hard'
-alias gitrup='git reset --hard upstream/master'
+alias gitrhum='git reset --hard upstream/master'
 alias gitclean='git clean -fdx && git submodule foreach --recursive git clean -fdx'
 alias gitsubup='git submodule update --init --recursive'
 alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
