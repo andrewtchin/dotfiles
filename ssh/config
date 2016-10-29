@@ -13,11 +13,6 @@
 #    KexAlgorithms curve25519-sha256@libssh.org,ecdh-sha2-nistp256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
 #    HostKeyAlgorithms ssh-rsa
 
-Host bitbucket.org
-    Ciphers aes256-ctr
-    KexAlgorithms diffie-hellman-group-exchange-sha256
-    MACs hmac-ripemd160
-
 Host enatai-gerrit.eng.vmware.com
     Ciphers aes256-ctr
     KexAlgorithms diffie-hellman-group1-sha1
