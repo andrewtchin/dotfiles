@@ -44,6 +44,3 @@ if [[ `uname` == 'Darwin' ]]
 then
   alias dns='scutil --dns'
 fi
-
-# VMware
-export DOCKER_API_VERSION=1.23
