@@ -12,7 +12,7 @@ which htop >/dev/null     && alias top=htop
 which ack-grep >/dev/null && alias ack=ack-grep
 which vim >/dev/null      && alias vi=vim
 
-alias md='mkdir'
+alias md='mkdir -p'
 alias gh='cd ~/github'
 alias vic='cd ~/go/src/github.com/vmware/vic'
 
