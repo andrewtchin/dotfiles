@@ -29,7 +29,6 @@ if [[ $use_antigen ]]; then
   antigen bundle zsh-users/zsh-completions
 
   antigen bundle aws
-  antigen bundle brew
   antigen bundle docker
   antigen bundle golang
   antigen bundle gitfast
