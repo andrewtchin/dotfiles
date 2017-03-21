@@ -15,6 +15,7 @@ which vim >/dev/null      && alias vi=vim
 alias md='mkdir -p'
 alias gh='cd ~/github'
 alias vic='cd ~/go/src/github.com/vmware/vic'
+alias buildvic='docker run -v $(pwd):/go/src/github.com/vmware/vic -w /go/src/github.com/vmware/vic golang:1.8 make all'
 
 alias grep='grep --color=auto'
 alias gr='grep -rn'
