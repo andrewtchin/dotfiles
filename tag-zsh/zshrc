@@ -21,7 +21,7 @@ elif [[ -a /usr/share/zsh-antigen/antigen.zsh ]]; then
   use_antigen=true
 fi
 
-if [[ $use_antigen ]]; then
+if $use_antigen ; then
   antigen use oh-my-zsh
 
   antigen bundle zsh-users/zsh-syntax-highlighting
