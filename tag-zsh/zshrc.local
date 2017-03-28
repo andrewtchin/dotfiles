@@ -44,4 +44,6 @@ alias gitrum='git rebase upstream/master'
 if [[ `uname` == 'Darwin' ]]
 then
   alias dns='scutil --dns'
+  alias desktophide='defaults write com.apple.finder CreateDesktop false; killall Finder'
+  alias desktopshow='defaults write com.apple.finder CreateDesktop true; killall Finder'
 fi
