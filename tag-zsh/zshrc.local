@@ -44,6 +44,10 @@ alias gitru='git remote update'
 alias gitrum='git rebase upstream/master'
 alias kickdrone'git commit --amend --no-edit'
 
+# Docker aliases
+alias drm='docker rm -f $(docker ps -a -q)'
+alias drmi='docker rmi -f $(docker images -q)'
+
 if [[ `uname` == 'Darwin' ]]
 then
   alias md5sum='md5'
