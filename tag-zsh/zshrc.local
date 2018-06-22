@@ -15,9 +15,6 @@ which vim >/dev/null      && alias vi=vim
 alias md='mkdir -p'
 alias gh='cd ~/github'
 alias gl='cd ~/gitlab'
-alias vic='cd ~/go/src/github.com/vmware/vic'
-alias product='cd ~/go/src/github.com/vmware/vic-product'
-alias buildvic='docker run -v $(pwd):/go/src/github.com/vmware/vic -w /go/src/github.com/vmware/vic golang:1.8 make all'
 
 alias grep='grep --color=auto'
 alias gr='grep -rn'
@@ -30,6 +27,8 @@ alias ll='ls -alhF'
 alias l='ls -alhF'
 alias tree3='tree -L 3'
 alias dutop='du -chs * | sort -rn | head'
+
+alias dbc='ssh andrewchin@w3-dbc402.eng.vmware.com'
 
 # Git aliases
 alias gitreset='git reset --hard && git submodule foreach --recursive git reset --hard'
