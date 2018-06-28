@@ -13,7 +13,7 @@
 #    KexAlgorithms curve25519-sha256@libssh.org,ecdh-sha2-nistp256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
 #    HostKeyAlgorithms ssh-rsa
 
-Host git.eng.vmware.com
+Host w3-dbc402.eng.vmware.com
     Ciphers aes256-ctr
     KexAlgorithms diffie-hellman-group1-sha1
     MACs hmac-sha1
