@@ -29,6 +29,8 @@ alias tree3='tree -L 3'
 alias dutop='du -chs * | sort -rn | head'
 
 alias dbc='ssh andrewchin@w3-dbc402.eng.vmware.com'
+export DBCDIR='/dbc/w3-dbc402/andrewchin/'
+alias nimbus='ssh andrewchin@nimbus-gateway.eng.vmware.com'
 
 # Git aliases
 alias gitreset='git reset --hard && git submodule foreach --recursive git reset --hard'
