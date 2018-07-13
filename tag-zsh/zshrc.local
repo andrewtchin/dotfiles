@@ -55,7 +55,7 @@ then
   alias dns='scutil --dns'
   alias desktophide='defaults write com.apple.finder CreateDesktop false; killall Finder'
   alias desktopshow='defaults write com.apple.finder CreateDesktop true; killall Finder'
-  alias vmrun='/Applications/VMware Fusion.app/Contents/Library/vmrun'
+  alias vmrun='/Applications/VMware\ Fusion.app/Contents/Library/vmrun'
 fi
 
 function hashes() {
