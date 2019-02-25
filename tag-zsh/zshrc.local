@@ -42,8 +42,8 @@ alias githttps='git config --global url."https://".insteadOf git://'
 alias gitcam='git commit -am'
 alias gitpom='git push origin master'
 alias gitru='git remote update'
+alias gitrom='git rebase origin/master'
 alias gitrum='git rebase upstream/master'
-alias kickdrone'git commit --amend --no-edit'
 
 # Docker aliases
 alias drm='docker rm -f $(docker ps -a -q)'
@@ -56,10 +56,16 @@ then
   alias desktophide='defaults write com.apple.finder CreateDesktop false; killall Finder'
   alias desktopshow='defaults write com.apple.finder CreateDesktop true; killall Finder'
   alias vmrun='/Applications/VMware\ Fusion.app/Contents/Library/vmrun'
+  alias kill1p='pkill 1Password'
 fi
 
 function hashes() {
   md5sum $1
   shasum $1
   shasum -a 256 $1
+}
+
+function sshkeygen() {
+  # sshkeygen /path/to/key "the comment"
+  ssh-keygen -t rsa -b 4096 -o -a 256 -f $1 -C "$2"
 }
