@@ -51,11 +51,11 @@ alias drmi='docker rmi -f $(docker images -q)'
 
 if [[ `uname` == 'Darwin' ]]
 then
+  export HOMEBREW_NO_ANALYTICS=1
   alias md5sum='md5'
   alias dns='scutil --dns'
   alias desktophide='defaults write com.apple.finder CreateDesktop false; killall Finder'
   alias desktopshow='defaults write com.apple.finder CreateDesktop true; killall Finder'
-  alias vmrun='/Applications/VMware\ Fusion.app/Contents/Library/vmrun'
   alias kill1p='pkill 1Password'
 fi
 
@@ -68,4 +68,9 @@ function hashes() {
 function sshkeygen() {
   # sshkeygen /path/to/key "the comment"
   ssh-keygen -t rsa -b 4096 -o -a 256 -f $1 -C "$2"
+}
+
+function vmwmnt() {
+  mount -t nfs build-toolchain.eng.vmware.com:/toolchain /build/toolchain
+  mount -t nfs build-apps.eng.vmware.com:/apps  /build/apps
 }
