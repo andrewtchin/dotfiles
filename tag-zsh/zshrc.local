@@ -59,6 +59,30 @@ then
   alias kill1p='pkill 1Password'
 fi
 
+function clearmeta() {
+  /usr/libexec/PlistBuddy -c "delete :systemitems:VolumesList" ~/Library/Preferences/com.apple.sidebarlists.plist
+  defaults delete /Library/Preferences/com.apple.Bluetooth.plist DeviceCache
+  defaults delete /Library/Preferences/com.apple.Bluetooth.plist IDSPairedDevices
+  defaults delete /Library/Preferences/com.apple.Bluetooth.plist PANDevices
+  defaults delete /Library/Preferences/com.apple.Bluetooth.plist PANInterfaces
+  defaults delete /Library/Preferences/com.apple.Bluetooth.plist SCOAudioDevices
+  rm -rfv /var/spool/cups/c0*
+  rm -rfv /var/spool/cups/tmp/*
+  rm -rfv /var/spool/cups/cache/job.cache*
+  defaults delete /Users/$USER/Library/Preferences/com.apple.iPod.plist "conn:128:Last Connect"
+  defaults delete /Users/$USER/Library/Preferences/com.apple.iPod.plist Devices
+  defaults delete /Library/Preferences/com.apple.iPod.plist "conn:128:Last Connect"
+  defaults delete /Library/Preferences/com.apple.iPod.plist Devices
+  rm -rfv /var/db/lockdown/*
+  qlmanage -r cache
+  defaults delete ~/Library/Preferences/com.apple.finder.plist FXDesktopVolumePositions
+  defaults delete ~/Library/Preferences/com.apple.finder.plist FXRecentFolders
+  defaults delete ~/Library/Preferences/com.apple.finder.plist RecentMoveAndCopyDestinations
+  defaults delete ~/Library/Preferences/com.apple.finder.plist RecentSearches
+  defaults delete ~/Library/Preferences/com.apple.finder.plist SGTRecentFileSearches
+  defaults delete ~/Library/Preferences/com.apple.iTunes.plist recentSearches
+}
+
 function hashes() {
   md5sum $1
   shasum $1
@@ -73,4 +97,9 @@ function sshkeygen() {
 function vmwmnt() {
   mount -t nfs build-toolchain.eng.vmware.com:/toolchain /build/toolchain
   mount -t nfs build-apps.eng.vmware.com:/apps  /build/apps
+}
+
+function genpass() {
+  # genpass <length>
+  openssl rand -base64 $1
 }
