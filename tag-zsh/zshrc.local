@@ -28,10 +28,6 @@ alias l='ls -alhF'
 alias tree3='tree -L 3'
 alias dutop='du -chs * | sort -rn | head'
 
-alias dbc='ssh andrewchin@w3-dbc402.eng.vmware.com'
-export DBCDIR='/dbc/w3-dbc402/andrewchin/'
-alias nimbus='ssh andrewchin@nimbus-gateway.eng.vmware.com'
-
 # Git aliases
 alias gitreset='git reset --hard && git submodule foreach --recursive git reset --hard'
 alias gitrhum='git reset --hard upstream/master'
@@ -57,6 +53,13 @@ then
   alias desktophide='defaults write com.apple.finder CreateDesktop false; killall Finder'
   alias desktopshow='defaults write com.apple.finder CreateDesktop true; killall Finder'
   alias kill1p='pkill 1Password'
+fi
+
+if [[ `hostname` == 'CORPORATE' ]];
+then
+  alias dbc='ssh andrewchin@w3-dbc402.eng.vmware.com'
+  alias nimbus='ssh andrewchin@nimbus-gateway.eng.vmware.com'
+  export DBCDIR='/dbc/w3-dbc402/andrewchin/'
 fi
 
 function clearmeta() {
