@@ -92,6 +92,11 @@ function hashes() {
   shasum -a 256 $1
 }
 
+function genpass() {
+  # genpass <length>
+  openssl rand -base64 $1
+}
+
 function sshkeygen() {
   # sshkeygen /path/to/key "the comment"
   ssh-keygen -t rsa -b 4096 -o -a 256 -f $1 -C "$2"
@@ -102,7 +107,7 @@ function vmwmnt() {
   mount -t nfs build-apps.eng.vmware.com:/apps  /build/apps
 }
 
-function genpass() {
-  # genpass <length>
-  openssl rand -base64 $1
+function sandbox() {
+  # sandbox "<branch>"
+  /build/apps/bin/gobuild sandbox queue fractal-epop --branch=$1 --no-changeset --syncto=latest --no-store-trees --accept-defaults --force
 }
