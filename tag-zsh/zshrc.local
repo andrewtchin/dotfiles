@@ -13,8 +13,9 @@ which ack-grep >/dev/null && alias ack=ack-grep
 which vim >/dev/null      && alias vi=vim
 
 alias md='mkdir -p'
-alias gh='cd ~/github'
-alias gl='cd ~/gitlab'
+alias gh='cd ~/src/github.com'
+alias gl='cd ~/src/gitlab.com'
+alias work='cd ~/src/gitlab.eng.vmware.com'
 
 alias grep='grep --color=auto'
 alias gr='grep -rn'
