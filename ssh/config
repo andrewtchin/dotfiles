@@ -9,6 +9,15 @@
 # Thus, host-specific definitions should be at the beginning of the
 # configuration file, and defaults at the end.
 
+Host w3-dbc402.eng.vmware.com
+    Ciphers aes256-ctr
+    KexAlgorithms diffie-hellman-group1-sha1
+    MACs hmac-sha1
+
+Host *.eng.vmware.com
+    Ciphers aes256-ctr
+    MACs hmac-sha2-512,hmac-sha2-256
+
 Host *
     HashKnownHosts yes
     Protocol 2
@@ -23,12 +32,6 @@ Host *
     # Compatibility config https://github.com/ioerror/duraconf
     # MACs hmac-sha2-512,hmac-sha2-256
     # Ciphers aes256-ctr
-
-Host w3-dbc402.eng.vmware.com
-    Ciphers aes256-ctr
-    KexAlgorithms diffie-hellman-group1-sha1
-    MACs hmac-sha1
-
     # https://wiki.mozilla.org/Security/Guidelines/OpenSSH#Modern
     Ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr
     HostKeyAlgorithms ssh-ed25519-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ssh-ed25519,ssh-rsa,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp521,ecdsa-sha2-nistp384,ecdsa-sha2-nistp256

@@ -5,13 +5,13 @@ end
 call plug#begin('~/.vim/bundle')
 
 " General
-Plug 'scrooloose/syntastic'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat' "enable repeating supported plugin maps with "."
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'davidhalter/jedi-vim'
-Plug 'vim-scripts/taglist.vim'
-Plug 'vim-scripts/Tagbar'
+"Plug 'scrooloose/syntastic'
+"Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-repeat' "enable repeating supported plugin maps with "."
+"Plug 'ntpeters/vim-better-whitespace'
+"Plug 'davidhalter/jedi-vim'
+"Plug 'vim-scripts/taglist.vim'
+"Plug 'vim-scripts/Tagbar'
 
 " Colorscheme
 Plug 'altercation/vim-colors-solarized'
@@ -20,10 +20,10 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-fugitive'
 
 " Org-mode
-Plug 'jceb/vim-orgmode'
+" Plug 'jceb/vim-orgmode'
 
 " Python
-Plug 'klen/python-mode'
+"Plug 'klen/python-mode'
 
 " YAML
 Plug 'ingydotnet/yaml-vim'
