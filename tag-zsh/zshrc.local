@@ -15,7 +15,6 @@ which vim >/dev/null      && alias vi=vim
 alias md='mkdir -p'
 alias gh='cd ~/src/github.com'
 alias gl='cd ~/src/gitlab.com'
-alias work='cd ~/src/gitlab.eng.vmware.com'
 
 alias grep='grep --color=auto'
 alias gr='grep -rn'
@@ -33,6 +32,7 @@ alias clear_hist='echo "" > ~/.zsh_history & exec $SHELL -l'
 # Git aliases
 alias gitreset='git reset --hard && git submodule foreach --recursive git reset --hard'
 alias gitrhum='git reset --hard upstream/master'
+alias gitrhom='git reset --hard origin/master'
 alias gitclean='git clean -fdx && git submodule foreach --recursive git clean -fdx'
 alias gitsubup='git submodule update --init --recursive'
 alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
@@ -59,9 +59,13 @@ fi
 
 if [[ `hostname` == 'CORPORATE' ]];
 then
+  export DBCDIR='/dbc/w3-dbc402/andrewchin/'
+  alias work='cd ~/src/gitlab.eng.vmware.com'
   alias dbc='ssh andrewchin@w3-dbc402.eng.vmware.com'
   alias nimbus='ssh andrewchin@nimbus-gateway.eng.vmware.com'
-  export DBCDIR='/dbc/w3-dbc402/andrewchin/'
+  alias kd='kubectl --context iad-dev -n vmc-pdx-public'
+  alias ks='kubectl --context pdx-stg -n vmc-stg-public'
+  alias kp='kubectl --context pdx-prd -n vmc-prd-public'
 fi
 
 function clearmeta() {
