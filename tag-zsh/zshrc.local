@@ -117,3 +117,8 @@ function sandbox() {
   # sandbox "<branch>"
   /build/apps/bin/gobuild sandbox queue fractal-epop --branch=$1 --no-changeset --syncto=latest --no-store-trees --accept-defaults --force
 }
+
+function pemftos() {
+  # pemftos "<filename>"
+  awk 'NF {sub(/\r/, ""); printf "%s\\n",$0;}' $1
+}
