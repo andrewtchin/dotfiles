@@ -122,3 +122,8 @@ function pemftos() {
   # pemftos "<filename>"
   awk 'NF {sub(/\r/, ""); printf "%s\\n",$0;}' $1
 }
+
+function x509() {
+  # x509 "<filename>"
+  openssl x509 -in $1 -text -noout
+}
