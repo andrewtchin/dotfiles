@@ -26,6 +26,7 @@ Host *
     StrictHostKeyChecking ask
     TCPKeepAlive no
     VisualHostKey yes
+    ForwardAgent no
     # CVE-2016-0777
     UseRoaming no
 
