@@ -98,6 +98,10 @@ function hashes() {
   shasum -a 256 $1
 }
 
+function hashdir() {
+  find "$1" -type f | sort | xargs -I {} shasum -a 256 {}
+}
+
 function genpass() {
   # genpass <length>
   openssl rand -base64 $1
