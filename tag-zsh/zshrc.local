@@ -47,6 +47,10 @@ alias gitrum='git rebase upstream/master'
 alias drm='docker rm -f $(docker ps -a -q)'
 alias drmi='docker rmi -f $(docker images -q)'
 
+# AWS aliases
+alias awswho='aws sts get-caller-identity'
+alias awsunset'unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN'
+
 if [[ `uname` == 'Darwin' ]]
 then
   export HOMEBREW_NO_ANALYTICS=1
