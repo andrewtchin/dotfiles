@@ -18,6 +18,7 @@
    pr-clean = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
   cara = "commit --amend --reset-author"
   email-guess = "!~/.git-scripts/email-guess.sh"
+  gpg-guess = "!~/.git-scripts/gpg-guess.sh"
   branch-name = "!git rev-parse --abbrev-ref HEAD"
   # Push the current branch to the remote "origin", and set it to track the upstream branch
   publish = "!git push -u origin $(git branch-name)"
@@ -31,6 +32,8 @@
   enabled = true
 [include]
   path = ~/.gitconfig.local
+#[commit]
+#  gpgsign = true
 # Causes issues when cloning oh-my-zsh
 #[transfer]
 #  fsckobjects = true
