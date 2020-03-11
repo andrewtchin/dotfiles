@@ -9,7 +9,7 @@
 # Thus, host-specific definitions should be at the beginning of the
 # configuration file, and defaults at the end.
 
-Host w3-dbc402.eng.vmware.com
+Host sc-dbc1212.eng.vmware.com
     Ciphers aes256-ctr
     KexAlgorithms diffie-hellman-group1-sha1
     MACs hmac-sha1

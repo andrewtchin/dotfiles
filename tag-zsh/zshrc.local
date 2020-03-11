@@ -54,6 +54,7 @@ alias awsunset='unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN'
 if [[ `uname` == 'Darwin' ]]
 then
   export HOMEBREW_NO_ANALYTICS=1
+  alias awk='gawk'
   alias md5sum='md5'
   alias dns='scutil --dns'
   alias desktophide='defaults write com.apple.finder CreateDesktop false; killall Finder'
@@ -63,9 +64,9 @@ fi
 
 if [[ `hostname` == 'CORPORATE' ]];
 then
-  export DBCDIR='/dbc/w3-dbc402/andrewchin/'
+  export DBCDIR='/dbc/sc-dbc1212/andrewchin/'
   alias work='cd ~/src/gitlab.eng.vmware.com'
-  alias dbc='ssh andrewchin@w3-dbc402.eng.vmware.com'
+  alias dbc='ssh andrewchin@sc-dbc1212.eng.vmware.com'
   alias nimbus='ssh andrewchin@nimbus-gateway.eng.vmware.com'
   alias kd='kubectl --context iad-dev -n vmc-pdx-public'
   alias ks='kubectl --context pdx-stg -n vmc-stg-public'
@@ -129,6 +130,11 @@ function sandbox() {
 function pemftos() {
   # pemftos "<filename>"
   awk 'NF {sub(/\r/, ""); printf "%s\\n",$0;}' $1
+}
+
+function pemfmt() {
+  # pemfmt "<filename>"
+  awk -i inplace '{gsub(/\\n/,RS)}1' $1
 }
 
 function x509() {
