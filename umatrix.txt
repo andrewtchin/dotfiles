@@ -80,6 +80,7 @@ fastmail.com www.fastmailusercontent.com frame allow
 
 github.com ghconduit.com xhr allow
 github.com githubapp.com * allow
+github.com githubassets.com script allow
 github.com raw.githubusercontent.com * allow
 github.com render.githubusercontent.com * allow
 github.com render.githubusercontent.com frame allow
