@@ -1,0 +1,220 @@
+https-strict: behind-the-scene false
+matrix-off: about-scheme true
+matrix-off: behind-the-scene true
+matrix-off: chrome-extension-scheme true
+matrix-off: chrome-scheme true
+matrix-off: moz-extension-scheme true
+matrix-off: opera-scheme true
+matrix-off: vivaldi-scheme true
+matrix-off: wyciwyg-scheme true
+noscript-spoof: * true
+referrer-spoof: * true
+referrer-spoof: behind-the-scene false
+* * * block
+* * css allow
+* * frame block
+* * image allow
+* 1st-party * allow
+* 1st-party frame allow
+
+# public CDN
+* a.fsdn.com script allow
+* ajax.aspnetcdn.com script allow
+* ajax.cloudflare.com script allow
+* ajax.googleapis.com script allow
+* akamaihd.net script allow
+* apps.bdimg.com script allow
+* cdn.bootcss.com script allow
+* cdn.jsdelivr.net script allow
+* cdn.staticfile.org script allow
+* cdnjs.cloudflare.com script allow
+* cloudfront.net media allow
+* cloudfront.net script allow
+* code.jquery.com script allow
+* maxcdn.bootstrapcdn.com script allow
+* s3.amazonaws.com media allow
+* s3.amazonaws.com script allow
+* ssl.fastly.net script allow
+* unpkg.com script allow
+
+aliexpress.com aliapp.org * allow
+aliexpress.com alibaba.com * allow
+aliexpress.com alicdn.com * allow
+aliexpress.com aliyun.com * allow
+aliexpress.com aliyuncs.com * allow
+
+amazon.com media-amazon.com * allow
+amazon.com ssl-images-amazon.com * allow
+
+americanexpress.com aexp-static.com * allow
+americanexpress.com aexp.com * allow
+
+chase.com chasecdn.com * allow
+chase.com facebook.com * block
+chase.com t.co * block
+chase.com twitter.com * block
+chase.com www.facebook.com * block
+
+cloudflare.com cloudflareapps.com xhr allow
+cloudflare.com filepicker.io cookie allow
+cloudflare.com filepicker.io frame allow
+cloudflare.com filepicker.io script allow
+
+digitalocean.com statuspage.io xhr allow
+digitalocean.com stripe.com script allow
+
+ebay.com ebaydesc.com * allow
+ebay.com ebayimg.com * allow
+ebay.com ebaystatic.com script allow
+ebaydesc.com ir.ebaystatic.com script allow
+
+embedly.com gfycat.com frame allow
+
+etrade.com etrade.net * allow
+
+fastmail.com fastmailusercontent.com * allow
+fastmail.com www.fastmailusercontent.com frame allow
+
+* facebook.com * block
+* facebook.net * block
+
+github.com ghconduit.com xhr allow
+github.com githubapp.com * allow
+github.com raw.githubusercontent.com * allow
+github.com render.githubusercontent.com * allow
+github.com render.githubusercontent.com frame allow
+github.com s3.amazonaws.com other allow
+github.com s3.amazonaws.com xhr allow
+
+gitlab.com assets.gitlab-static.net script allow
+
+google.com accounts.youtube.com frame allow
+google.com content.googleapis.com frame allow
+google.com content.googleapis.com script allow
+google.com content.googleapis.com xhr allow
+google.com gstatic.com * allow
+
+houzz.com hzcdn.com * allow
+
+levels.fyi ajax.googleapis.com script allow
+levels.fyi cdn.jsdelivr.net script allow
+levels.fyi cloudflare.com * allow
+levels.fyi filestackapi.com * allow
+levels.fyi maxcdn.bootstrapcdn.com script allow
+
+* linkedin.com * block
+linkedin.com linkedin.com * allow
+linkedin.com static.licdn.com script allow
+linkedin.com static.licdn.com xhr allow
+
+lowes.com lowescdn.com * allow
+
+mega.nz mega.co.nz xhr allow
+
+microsoftonline.com msauth.net * allow
+microsoftonline.com msftauth.net * allow
+microsoftonline.com office365.com * allow
+
+myworkdayjobs.com myworkday.com * allow
+myworkdayjobs.com myworkdaycdn.com * allow
+
+netflix.com nflxext.com * allow
+
+office.com microsoft.com * allow
+office.com msocdn.com * allow
+office.com office.net * allow
+
+paypal.com paypalobjects.com cookie allow
+paypal.com paypalobjects.com script allow
+paypal.com paypalobjects.com xhr allow
+
+pennymacusa.com cloudflare.com * allow
+pennymacusa.com google.com * allow
+pennymacusa.com www.google.com frame allow
+pennymacusa.com www.gstatic.com script allow
+
+reddit.com redd.it * allow
+reddit.com cdn.embedly.com frame allow
+reddit.com gateway.reddit.com xhr allow
+reddit.com oops.redditmedia.com xhr allow
+reddit.com www.reddit.com script allow
+reddit.com www.reddit.com xhr allow
+reddit.com www.redditmedia.com frame allow
+reddit.com www.redditmedia.com script allow
+reddit.com www.redditstatic.com script allow
+
+redfin.com apis.google.com script allow
+redfin.com cdn-redfin.com * allow
+redfin.com maps.googleapis.com * allow
+redfin.com smartlock.google.com script allow
+
+schwab.com schwabcdn.com * allow
+
+ua-spoof: slack.com false
+slack.com slack-edge.com css allow
+slack.com slack-edge.com image allow
+slack.com slack-edge.com script allow
+slack.com slack-msgs.com xhr allow
+slack.com slack.global.ssl.fastly.net media allow
+slack.com universal.slack-core.com xhr allow
+
+soundcloud.com a-v2.sndcdn.com script allow
+soundcloud.com a-v2.sndcdn.com xhr allow
+soundcloud.com cf-hls-media.sndcdn.com xhr allow
+soundcloud.com i1.sndcdn.com xhr allow
+soundcloud.com style.sndcdn.com xhr allow
+soundcloud.com wis.sndcdn.com xhr allow
+
+stackoverflow.com ajax.googleapis.com script allow
+stackoverflow.com sstatic.net image allow
+stackoverflow.com sstatic.net script allow
+stackoverflow.com cdn.sstatic.net script allow
+stackexchange.com cdn.sstatic.net script allow
+
+trello.com d2k1ftgv7pobq7.cloudfront.net * allow
+trello.com d2t77mnxyo7adj.cloudfront.net * allow
+trello.com trellocdn.com * allow
+
+twitch.tv 0914.global.ssl.fastly.net script allow
+twitch.tv 0914.global.ssl.fastly.net xhr allow
+twitch.tv algolia.net script allow
+twitch.tv algolia.net xhr allow
+twitch.tv algolianet.com script allow
+twitch.tv algolianet.com xhr allow
+twitch.tv cloudfront.net xhr allow
+twitch.tv polyfill.twitchsvc.net script allow
+twitch.tv s.jtvnw.net image allow
+twitch.tv sctatic.twitchcdn.net script allow
+twitch.tv sentinel.twitchsvc.net xhr allow
+twitch.tv static-cdn.jtvnw.net image allow
+twitch.tv static.twitchcdn.net css allow
+twitch.tv static.twitchcdn.net image allow
+twitch.tv static.twitchcdn.net script allow
+twitch.tv ttvnw.net xhr allow
+twitch.tv web-cdn.ttvnw.net script allow
+
+twitter.com twimg.com * allow
+
+vanguard.com vgcontent.info * allow
+
+wikipedia.org cxserver.wikimedia.org xhr allow
+wikipedia.org login.wikimedia.org script allow
+wikipedia.org meta.wikimedia.org script allow
+wikipedia.org recommend.wmflabs.org xhr allow
+wikipedia.org upload.wikimedia.org media allow
+
+workspaceair.com d26nfp668vcae6.cloudfront.net script allow
+workspaceair.com dx4g5om2mzj8s.cloudfront.net script allow
+
+yahoo.com yimg.com * allow
+
+accounts.google.com ssl.gstatic.com xhr allow
+youtube.com googlevideo.com xhr allow
+youtube.com googlevideo.com media allow
+youtube.com s.ytimg.com script allow
+youtube.com s.ytimg.com xhr allow
+youtube.com www.gstatic.com script allow
+youtube.com ytimg.com image allow
+
+youtube-nocookie.com googlevideo.com xhr allow
+youtube-nocookie.com ytimg.com * allow
