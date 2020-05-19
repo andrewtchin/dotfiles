@@ -52,6 +52,9 @@ alias drmi='docker rmi -f $(docker images -q)'
 alias awswho='aws sts get-caller-identity'
 alias awsunset='unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN'
 
+# Python aliases
+alias venv='python3  -m venv venv'
+alias venva='source venv/bin/activate'
 if [[ `uname` == 'Darwin' ]]
 then
   export HOMEBREW_NO_ANALYTICS=1
