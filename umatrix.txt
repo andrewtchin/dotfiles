@@ -34,6 +34,8 @@ referrer-spoof: behind-the-scene false
 * maxcdn.bootstrapcdn.com script allow
 * s3.amazonaws.com media allow
 * s3.amazonaws.com script allow
+* shopify.com script allow
+* shopifycdn.com script allow
 * ssl.fastly.net script allow
 * unpkg.com script allow
 
@@ -77,6 +79,7 @@ fastmail.com www.fastmailusercontent.com frame allow
 
 * facebook.com * block
 * facebook.net * block
+* fbcdn.net * block
 
 github.com ghconduit.com xhr allow
 github.com githubapp.com * allow
@@ -95,7 +98,23 @@ google.com content.googleapis.com script allow
 google.com content.googleapis.com xhr allow
 google.com gstatic.com * allow
 
+heb.com hebtrue.com * allow
+heb.com www.google.com frame allow
+heb.com www.google.com script allow
+heb.com www.google.com xhr allow
+heb.com www.gstatic.com script allow
+
 houzz.com hzcdn.com * allow
+
+leetcode.com freesecure.timeanddate.com frame allow
+leetcode.com freesecure.timeanddate.com script allow
+leetcode.com freesecure.timeanddate.com xhr allow
+leetcode.com leetcode-cn.com * allow
+leetcode.com www.google.com frame allow
+leetcode.com www.google.com script allow
+leetcode.com www.google.com xhr allow
+leetcode.com www.gstatic.com script allow
+leetcode.com www.recaptcha.net script allow
 
 levels.fyi ajax.googleapis.com script allow
 levels.fyi cdn.jsdelivr.net script allow
@@ -118,6 +137,8 @@ microsoftonline.com office365.com * allow
 
 myworkdayjobs.com myworkday.com * allow
 myworkdayjobs.com myworkdaycdn.com * allow
+
+namemesh.com stackpath.bootstrapcdn.com script allow
 
 netflix.com nflxext.com * allow
 
@@ -197,6 +218,8 @@ twitch.tv web-cdn.ttvnw.net script allow
 twitter.com twimg.com * allow
 
 vanguard.com vgcontent.info * allow
+vanguard.com vanguard.d2.sc.omtrdc.net script allow
+vanguard.com vanguard.demdex.net frame allow
 
 wikipedia.org cxserver.wikimedia.org xhr allow
 wikipedia.org login.wikimedia.org script allow
