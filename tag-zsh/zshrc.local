@@ -28,7 +28,9 @@ alias ll='ls -alhF'
 alias l='ls -alhF'
 alias tree3='tree -L 3'
 alias dutop='du -chs * | sort -rn | head'
-alias clear_hist='echo "" > ~/.zsh_history & exec $SHELL -l'
+alias rmhist='echo "" > ~/.zsh_history & exec $SHELL -l'
+
+alias ytdl='youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4"'
 
 # Git aliases
 alias gitreset='git reset --hard && git submodule foreach --recursive git reset --hard'
@@ -55,6 +57,8 @@ alias awsunset='unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN'
 # Python aliases
 alias venv='python3  -m venv venv'
 alias venva='source venv/bin/activate'
+
+
 if [[ `uname` == 'Darwin' ]]
 then
   export HOMEBREW_NO_ANALYTICS=1
