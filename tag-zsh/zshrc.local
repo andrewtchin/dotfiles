@@ -150,3 +150,13 @@ function x509() {
   # x509 "<filename>"
   openssl x509 -in $1 -text -noout
 }
+
+function stripexif() 
+{ 
+  exiftool -all= "$@"
+}
+
+function showexif()
+{
+  exiftool -a -u -g1 $1
+}
