@@ -68,6 +68,17 @@ then
   alias desktophide='defaults write com.apple.finder CreateDesktop false; killall Finder'
   alias desktopshow='defaults write com.apple.finder CreateDesktop true; killall Finder'
   alias kill1p='pkill 1Password'
+  alias date='gdate'
+  alias journal=' \
+  journaldir="$HOME/sync/journal" ;   \
+  year="`date +%Y`" ;            \
+  yearpath="$journaldir/$year" ; \
+  [[ -d "$yearpath" ]] || mkdir -p $yearpath ; \
+  jfile="log_`date -I`.md" ;                \
+  jfilepath="$journaldir/$year/$jfile" ;    \
+  header="# log_`date -I`\n\n# Highlights:\n\n" ; \
+  [[ -f "$jfilepath" ]] && echo "Opening log: $jfilepath" || { echo "Creating new log: $jfilepath" ; echo -e "$header" >  $jfilepath ; } ; \
+  vim $jfilepath ; '
 fi
 
 if [[ `hostname` == 'CORPORATE' ]];
