@@ -15,7 +15,6 @@ Protocol 2
 # HostKeys for protocol version 2
 HostKey /etc/ssh/ssh_host_ed25519_key
 HostKey /etc/ssh/ssh_host_rsa_key
-HostKey /etc/ssh/ssh_host_ecdsa_key
 
 # Prevent user setting environment options
 PermitUserEnvironment no
@@ -31,6 +30,9 @@ LogLevel VERBOSE
 # Authentication
 LoginGraceTime 30
 MaxAuthTries 10
+MaxSessions 10
+HostbasedAuthentication no
+IgnoreRhosts yes
 PasswordAuthentication no
 PermitEmptyPasswords no
 PermitRootLogin no
@@ -47,6 +49,7 @@ ClientAliveCountMax 3
 TCPKeepAlive no
 
 AllowAgentForwarding no
+AllowTcpForwarding no
 X11Forwarding no
 X11DisplayOffset 10
 PrintMotd no
