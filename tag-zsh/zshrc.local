@@ -125,16 +125,6 @@ function sshkeygen() {
   ssh-keygen -t rsa -b 4096 -o -a 256 -f $1 -C "$2"
 }
 
-function vmwmnt() {
-  mount -t nfs build-toolchain.eng.vmware.com:/toolchain /build/toolchain
-  mount -t nfs build-apps.eng.vmware.com:/apps  /build/apps
-}
-
-function sandbox() {
-  # sandbox "<branch>"
-  /build/apps/bin/gobuild sandbox queue fractal-epop --branch=$1 --no-changeset --syncto=latest --no-store-trees --accept-defaults --force
-}
-
 function pemftos() {
   # pemftos "<filename>"
   awk 'NF {sub(/\r/, ""); printf "%s\\n",$0;}' $1
