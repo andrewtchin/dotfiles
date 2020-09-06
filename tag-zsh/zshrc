@@ -1,12 +1,18 @@
 # ssh-agent
 # Predictable SSH authentication socket location
 # so that ssh-agent works on reattach to tmux sessions.
-SOCK="/tmp/ssh-agent-$USER-screen"
-if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]; then
-    rm -f /tmp/ssh-agent-$USER-screen
-    ln -sf $SSH_AUTH_SOCK $SOCK
-    export SSH_AUTH_SOCK=$SOCK
-fi
+# SOCK="/tmp/ssh-agent-$USER-screen"
+# if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]; then
+#     rm -f /tmp/ssh-agent-$USER-screen
+#     ln -sf $SSH_AUTH_SOCK $SOCK
+#     export SSH_AUTH_SOCK=$SOCK
+# fi
+
+# gpg-agent
+# Uncomment to use GPG for ssh-agent
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
 
 # Python
 export PYTHONSTARTUP="${HOME}/.pythonrc"
