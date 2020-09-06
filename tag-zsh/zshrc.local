@@ -31,6 +31,7 @@ alias dutop='du -chs * | sort -rn | head'
 alias rmhist='echo "" > ~/.zsh_history & exec $SHELL -l'
 
 alias ytdl='youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4"'
+alias gpgr='gpg-connect-agent updatestartuptty /bye'
 
 # Git aliases
 alias gitreset='git reset --hard && git submodule foreach --recursive git reset --hard'
@@ -58,7 +59,6 @@ alias awsunset='unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN'
 alias venv='python3  -m venv venv'
 alias venva='source venv/bin/activate'
 
-
 if [[ `uname` == 'Darwin' ]]
 then
   export HOMEBREW_NO_ANALYTICS=1
@@ -79,17 +79,6 @@ then
   header="# log_`date -I`\n\n# Highlights:\n\n" ; \
   [[ -f "$jfilepath" ]] && echo "Opening log: $jfilepath" || { echo "Creating new log: $jfilepath" ; echo -e "$header" >  $jfilepath ; } ; \
   vim $jfilepath ; '
-fi
-
-if [[ `hostname` == 'CORPORATE' ]];
-then
-  export DBCDIR='/dbc/sc-dbc1212/andrewchin/'
-  alias work='cd ~/src/gitlab.eng.vmware.com'
-  alias dbc='ssh andrewchin@sc-dbc1212.eng.vmware.com'
-  alias nimbus='ssh andrewchin@nimbus-gateway.eng.vmware.com'
-  alias kd='kubectl --context iad-dev -n vmc-pdx-public'
-  alias ks='kubectl --context pdx-stg -n vmc-stg-public'
-  alias kp='kubectl --context pdx-prd -n vmc-prd-public'
 fi
 
 function clearmeta() {
