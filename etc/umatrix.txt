@@ -79,6 +79,10 @@ atlassian.com atl-paas.net * allow
 atlassian.com auth0.com * allow
 atlassian.com recaptcha.net script allow
 atlassian.com smartlock.google.com script allow
+betterworldbooks.com algolia.net * allow
+betterworldbooks.com algolianet.com * allow
+betterworldbooks.com stripe.com * allow
+betterworldbooks.com stripe.network * allow
 blockchain.com blockchain.info * allow
 chase.com chasecdn.com * allow
 chase.com facebook.com * block
@@ -95,6 +99,8 @@ digitalocean.com digitaloceanspaces.com * allow
 digitalocean.com services.taxamo.com script allow
 digitalocean.com statuspage.io xhr allow
 digitalocean.com stripe.com script allow
+discord.com discord.gg * allow
+downforeveryoneorjustme.com api-prod.downfor.cloud xhr allow
 dropbox.com dropboxstatic.com * allow
 ebay.com ebaydesc.com * allow
 ebay.com ebayimg.com * allow
@@ -117,11 +123,13 @@ github.com render.githubusercontent.com frame allow
 github.com s3.amazonaws.com other allow
 github.com s3.amazonaws.com xhr allow
 gitlab.com assets.gitlab-static.net script allow
+goodreads.com gr-assets.com * allow
 google.com accounts.youtube.com frame allow
 google.com content.googleapis.com frame allow
 google.com content.googleapis.com script allow
 google.com content.googleapis.com xhr allow
 google.com gstatic.com * allow
+greenhouse.io s3.us-east-1.amazonaws.com * allow
 heb.com hebtrue.com * allow
 homedepot.com homedepot-static.com * allow
 houzz.com hzcdn.com * allow
@@ -135,10 +143,13 @@ levels.fyi cdn.jsdelivr.net script allow
 levels.fyi cloudflare.com * allow
 levels.fyi filestackapi.com * allow
 levels.fyi maxcdn.bootstrapcdn.com script allow
+linkedin.com licdn.com * allow
 linkedin.com linkedin.com * allow
 linkedin.com static.licdn.com script allow
 linkedin.com static.licdn.com xhr allow
+loanadministration.com bkiconnect.com * allow
 lowes.com lowescdn.com * allow
+lowes.com maps.googleapis.com script allow
 mega.nz mega.co.nz xhr allow
 microsoftonline.com msauth.net * allow
 microsoftonline.com msftauth.net * allow
@@ -146,10 +157,12 @@ microsoftonline.com office365.com * allow
 myworkdayjobs.com myworkday.com * allow
 myworkdayjobs.com myworkdaycdn.com * allow
 namemesh.com stackpath.bootstrapcdn.com script allow
+newrez.com shellpointmortgageservicing.com * allow
 netflix.com nflxext.com * allow
 office.com microsoft.com * allow
 office.com msocdn.com * allow
 office.com office.net * allow
+okta.com oktacdn.com * allow
 paypal.com paypalobjects.com * allow
 pennymacusa.com cloudflare.com * allow
 quora.com quoracdn.net * allow
@@ -208,6 +221,7 @@ twitch.tv static.twitchcdn.net css allow
 twitch.tv static.twitchcdn.net image allow
 twitch.tv static.twitchcdn.net script allow
 twitch.tv ttvnw.net xhr allow
+twitch.tv twitchcdn.net * allow
 twitch.tv web-cdn.ttvnw.net script allow
 twitter.com twimg.com * allow
 vanguard.com vanguard.d2.sc.omtrdc.net script allow
@@ -218,8 +232,6 @@ wikipedia.org login.wikimedia.org script allow
 wikipedia.org meta.wikimedia.org script allow
 wikipedia.org recommend.wmflabs.org xhr allow
 wikipedia.org upload.wikimedia.org media allow
-workspaceair.com d26nfp668vcae6.cloudfront.net script allow
-workspaceair.com dx4g5om2mzj8s.cloudfront.net script allow
 yahoo.com yimg.com * allow
 youtube-nocookie.com googlevideo.com xhr allow
 youtube-nocookie.com ytimg.com * allow

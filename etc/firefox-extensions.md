@@ -18,3 +18,9 @@ https://addons.mozilla.org/en-US/firefox/addon/umatrix/
 
 Copy PlainText
 https://addons.mozilla.org/en-US/firefox/addon/copy-plaintext
+
+Decentraleyes
+https://addons.mozilla.org/en-US/firefox/addon/decentraleyes
+
+ClearURLs
+https://addons.mozilla.org/en-US/firefox/addon/clearurls

@@ -3,4 +3,4 @@
   url = https://github.com/zsh-users/antigen
 [submodule "usbkill"]
 	path = usbkill
-	url = git@github.com:hephaest0s/usbkill.git
+	url = https://github.com/hephaest0s/usbkill
