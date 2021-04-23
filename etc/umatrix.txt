@@ -114,6 +114,7 @@ fast.com netflix.com * allow
 fast.com nflxvideo.net * allow
 fastmail.com fastmailusercontent.com * allow
 fastmail.com www.fastmailusercontent.com frame allow
+fidelity.com fid-inv.com * allow
 github.com ghconduit.com xhr allow
 github.com githubapp.com * allow
 github.com githubassets.com script allow
@@ -132,6 +133,8 @@ google.com gstatic.com * allow
 greenhouse.io s3.us-east-1.amazonaws.com * allow
 heb.com hebtrue.com * allow
 homedepot.com homedepot-static.com * allow
+homedepot.com thdstatic.com * allow
+homedepot.com thdws.com * allow
 houzz.com hzcdn.com * allow
 leetcode.com freesecure.timeanddate.com frame allow
 leetcode.com freesecure.timeanddate.com script allow
@@ -201,6 +204,7 @@ stackoverflow.com sstatic.net script allow
 stanford.edu * frame inherit
 stanford.edu dj5xacgolm39p.cloudfront.net xhr allow
 stanford.edu vjs.zencdn.net script allow
+thingiverse.com makerbot.com * allow
 trello.com atlassian.com * allow
 trello.com d2k1ftgv7pobq7.cloudfront.net * allow
 trello.com d2t77mnxyo7adj.cloudfront.net * allow
@@ -227,6 +231,8 @@ twitter.com twimg.com * allow
 vanguard.com vanguard.d2.sc.omtrdc.net script allow
 vanguard.com vanguard.demdex.net frame allow
 vanguard.com vgcontent.info * allow
+vimeo.com akamaized.net * allow
+vimeo.com vimeocdn.com * allow
 wikipedia.org cxserver.wikimedia.org xhr allow
 wikipedia.org login.wikimedia.org script allow
 wikipedia.org meta.wikimedia.org script allow
@@ -241,5 +247,6 @@ youtube.com s.ytimg.com script allow
 youtube.com s.ytimg.com xhr allow
 youtube.com www.gstatic.com script allow
 youtube.com ytimg.com image allow
+zillow.com maps.googleapis.com * allow
 zillow.com zg-api.com * allow
 zillow.com zillowstatic.com * allow
